@@ -1,0 +1,240 @@
+<?php
+/**
+ *
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
+ *
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License version 3 as published by the
+ * Free Software Foundation with the addition of the following permission added
+ * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
+ * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
+ * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ *
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ *
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU Affero General Public License version 3.
+ *
+ * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
+
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
+
+$mod_strings = array(
+    'DEFAULT_CHARSET' => 'UTF-8',
+    'LBL_DISABLED_TITLE' => 'SuiteCRM Kurulumu Devre Dışı',
+    'LBL_DISABLED_TITLE_2' => 'SuiteCRM Kurulumu Devre Dışı Bırakılmış',
+    'LBL_DISABLED_DESCRIPTION' => 'Kurucu zaten bir kez çalıştırılmış olduğundan, güvenlik önlemi olarak, ikinci kez çalıştırılması devre dışı bırakılmış. Kurucuyu yeniden çalıştırmak istediğinizden kesinlikle eminseniz, config.php dosyasını açın ve \'installer_locked\' değişkenini bularak (ya da ekleyerek) \'false\' olarak ayarlayın. Satır şu şekilde görünmelidir:',
+    'LBL_DISABLED_DESCRIPTION_2' => 'Bu değişiklik yapıldıktan sonra, kurulum işlemini başlatmak için aşağıdan "Başlat" üzerine tıklayabilirsiniz. <i>Kurulum tamamlandıktan sonra \'installer_locked\' değerini \'true\' olarak değiştirmeniz istenecek.</i>',
+    'LBL_DISABLED_HELP_1' => 'Kurulum hakkında yardım almak için, lütfen SuiteCRM',
+    'LBL_DISABLED_HELP_2' => 'destek forumlarına bakın',
+
+    'LBL_REG_TITLE' => 'Hesap Açın',
+    'LBL_REG_CONF_1' => 'Lütfen SuiteCRM hesabı açmak için bir dakikanızı ayırın. Bize SuiteCRM uygulamasını nasıl kullanmak istediğinizi anlatabilirseniz, size her zaman gereksinimlerinize en uygun ürün ve hizmeti sunmak için çalışacağımızdan emin olabilirsiniz.',
+    'LBL_REG_CONF_2' => 'Kayıt olmak için yalnız adınız ve e-posta adresiniz gereklidir. Diğer alanları doldurmanız zorunlu değildir ancak bize çok yardımı olur. Buradan alacağımız bilgiler, üçüncü taraflara satılmaz, kiralanmaz ya da dağıtılmaz.',
+    'LBL_REG_CONF_3' => 'Hesap açtığınız için teşekkür ederiz. SuiteCRM oturumu açmak için Bitti üzerine tıklayın. İlk kez oturum açarken "admin" kullanıcı adını ve 2. adımda yazdığınız parolayı kullanın.',
+
+
+    'ERR_ADMIN_PASS_BLANK' => 'SuiteCRM admin parolası boş olamaz.',
+    'ERR_CHECKSYS_CALL_TIME' => 'Allow Call Time Pass Reference seçeneği Off olarak ayarlanmış (php.ini dosyasından On yaparak etkinleştirin)',
+    'ERR_CHECKSYS_CURL' => 'Bulunamadı: SuiteCRM Zamanlanmış Görevleri sınırlı özellikler ile çalışabilecek.',
+    'ERR_CHECKSYS_MEM_LIMIT_1' => 'Uyarı: $memory_limit (php. ini dosyanızda ',
+    'ERR_CHECKSYS_MEM_LIMIT_2' => 'M ya da daha büyük bir değere ayarlayın)',
+    'ERR_CHECKSYS_NO_SESSIONS' => 'Oturum değişkenleri yazılıp okunamadığından kuruluma devam edilemiyor.',
+    'ERR_CHECKSYS_NOT_VALID_DIR' => 'Klasör Geçersiz',
+    'ERR_CHECKSYS_NOT_WRITABLE' => 'Uyarı: Yazılabilir Değil',
+    'ERR_CHECKSYS_PHP_INVALID_VER' => 'Kurulu PHP Sürümü Geçersiz: ( sürüm',
+    'ERR_CHECKSYS_PHP_UNSUPPORTED' => 'Kurulu PHP Sürümü Desteklenmiyor: ( sürüm',
+    'ERR_CHECKSYS_SAFE_MODE' => 'Güvenli Kip Etkin (lütfen php.ini dosyasından devre dışı bırakın)',
+    'ERR_DB_ADMIN' => 'Veritabanı yönetici kullanıcı adı ya da parolası geçersiz (Hata ',
+    'ERR_DB_EXISTS_NOT' => 'Belirtilen veritabanı bulunamadı.',
+    'ERR_DB_EXISTS_WITH_CONFIG' => 'Yapılandırma verileri bulunan bir veritabanı zaten var. Seçilmiş veritabanı üzerine kurulum yapmak için kurulumu yeniden çalıştırın ve "Var olan SuiteCRM tabloları silinip yeniden oluşturulsun" seçeneğini etkinleştirin. Güncellemek için Yönetim panosundaki Güncelleme Yardımcısını kullanın. Güncelleme ile ilgili ayrıntılı bilgi almak için <a href="https://docs.suitecrm.com/admin/installation-guide/upgrading/" target="_new">bu bölüme bakabilirsiniz</a>.',
+    'ERR_DB_EXISTS' => 'Bu veritabanı adı zaten var. Aynı adla başka bir veritabanı oluşturulamaz.',
+    'ERR_DB_HOSTNAME' => 'Sunucu adı boş olamaz.',
+    'ERR_DB_INVALID' => 'Seçilmiş veritabanı türü geçersiz.',
+    'ERR_DB_LOGIN_FAILURE_MYSQL' => 'SuiteCRM veritabanı kullanıcı adı ya da parolası geçersiz (Hata ',
+    'ERR_DB_MYSQL_VERSION1' => 'MySQL ',
+    'ERR_DB_MYSQL_VERSION2' => ' sürümü desteklenmiyor. Yalnız MySQL 4.1.x ve üzerindeki sürümler desteklenir.',
+    'ERR_DB_NAME' => 'Veritabanı adı boş olamaz.',
+    'ERR_DB_NAME2' => "Veritabanı adında '\\', '/', ya da '.' karakterleri bulunamaz",
+    'ERR_DB_PASSWORD' => 'SuiteCRM parolası ile onayı aynı değil.',
+    'ERR_DB_PRIV_USER' => 'Veritabanı yönetici kullanıcı adı zorunludur.',
+    'ERR_DB_USER_EXISTS' => 'Bu SuiteCRM kullanıcı adı zaten var. Aynı adla başka bir kullanıcı adı oluşturulamaz.',
+    'ERR_DB_USER' => 'SuiteCRM için kullanıcı adı boş olamaz.',
+    'ERR_DBCONF_VALIDATION' => 'Lütfen ilerlemeden önce aşağıdaki sorunları giderin:',
+    'ERR_ERROR_GENERAL' => 'Aşağıdaki sorunlar bulundu:',
+    'ERR_LICENSE_MISSING' => 'Zorunlu Alanlar Doldurulmamış',
+    'ERR_LICENSE_NOT_FOUND' => 'Lisans dosyası bulunamadı!',
+    'ERR_LOG_DIRECTORY_NOT_EXISTS' => 'Belirtilen günlük klasörü geçersiz.',
+    'ERR_LOG_DIRECTORY_NOT_WRITABLE' => 'Belirtilen günlük klasörü yazılabilir değil.',
+    'ERR_LOG_DIRECTORY_REQUIRED' => 'Özel bir günlük klasörü kullanmak istiyorsanız belirtmelisiniz.',
+    'ERR_NO_DIRECT_SCRIPT' => 'Betik doğrudan işlenemiyor.',
+    'ERR_PASSWORD_MISMATCH' => 'SuiteCRM yönetici parolası ile onayı aynı değil.',
+    'ERR_PERFORM_CONFIG_PHP_1' => '<span class=stop>config.php</span> dosyasına yazılamıyor.',
+    'ERR_PERFORM_CONFIG_PHP_2' => 'Kuruluma devam etmek için config.php dosyasını el ile oluşturup aşağıdaki yapılandırma bilgilerini içine kopyalayabilirsiniz. Sonraki adıma geçebilmek için <strong> kesinlikle</strong> config.php dosyasını oluşturmalısınız.',
+    'ERR_PERFORM_CONFIG_PHP_3' => 'Config.php dosyasını oluşturmayı hatırladınız mı?',
+    'ERR_PERFORM_CONFIG_PHP_4' => 'Uyarı: config.php dosyasına yazılamadı. Dosyanın var olduğundan emin olun.',
+    'ERR_PERFORM_HTACCESS_1' => 'Sistem ',
+    'ERR_PERFORM_HTACCESS_2' => ' dosyasına yazamıyor.',
+    'ERR_PERFORM_HTACCESS_3' => 'Günlük dosyasına web tarayıcısı ile erişilmesini engellemek istiyorsanız, günlük klasörünüzde aşağıdaki satırı içeren bir .htaccess dosyası oluşturun:',
+    'ERR_PERFORM_NO_TCPIP' => '<b>İnternet bağlantısı algılanamadı.</b>Bağlantı kurulduğunda, Bir SuiteCRM hesabı açmak için <a href=\\"http://www.suitecrm.com\\">http://www.suitecrm.com</a> adresine gidin. Kuruluşunuzun SuiteCRM uygulamasını nasıl kullandığı hakkında bilgi edinirsek, gereksinimlerinize uygun özellikler geliştirmeye devam edebiliriz.',
+    'ERR_SESSION_DIRECTORY_NOT_EXISTS' => 'Belirtilen oturum klasörü geçersiz.',
+    'ERR_SESSION_DIRECTORY' => 'Belirtilen oturum klasörü yazılabilir değil.',
+    'ERR_SESSION_PATH' => 'Özel bir oturum klasörü kullanmak istiyorsanız belirtmelisiniz.',
+    'ERR_SI_NO_CONFIG' => 'Belge kök klasöründe bulunan config_si.php dosyasını katmamışsınız ya da config.php dosyasında $sugar_config_si seçeneğini belirtmemişsiniz',
+    'ERR_SITE_GUID' => 'Özel bir uygulama kodu kullanmak istiyorsanız belirtmelisiniz.',
+    'ERR_URL_BLANK' => 'Adres boş olamaz.',
+    'LBL_BACK' => 'Geri',
+    'LBL_CHECKSYS_1' => 'SuiteCRM kurulumunuzun düzgün çalışması için aşağıdaki sistem denetimlerinin tümünün yeşil olduğundan emin olun. Kırmızı bir öge varsa, sorunu düzeltmek için gerekli işlemleri yapın.',
+    'LBL_CHECKSYS_CACHE' => 'Yazılabilir Ön Bellek Alt Klasörleri',
+    'LBL_CHECKSYS_CALL_TIME' => 'PHP Allow Call Time Pass Reference seçeneği On olarak ayarlandı',
+    'LBL_CHECKSYS_COMPONENT' => 'Bileşen',
+    'LBL_CHECKSYS_CONFIG' => 'Yazılabilir SuiteCRM Yapılandırma Dosyası (config.php)',
+    'LBL_CHECKSYS_CURL' => 'cURL Kitaplığı',
+    'LBL_CHECKSYS_CUSTOM' => 'Yazılabilir Özel Klasör',
+    'LBL_CHECKSYS_DATA' => 'Yazılabilir Veri Alt Klasörleri',
+    'LBL_CHECKSYS_MEM_OK' => 'Tamam (Sınırlama yok)',
+    'LBL_CHECKSYS_MEM_UNLIMITED' => 'Tamam (Sınırsız)',
+    'LBL_CHECKSYS_MEM' => 'PHP Bellek Sınırı >= ',
+    'LBL_CHECKSYS_MODULE' => 'Yazılabilir Modül Alt Klasör ve Dosyaları',
+    'LBL_CHECKSYS_NOT_AVAILABLE' => 'Kullanılamıyor',
+    'LBL_CHECKSYS_OK' => 'Tamam',
+    'LBL_CHECKSYS_PHP_INI' => '<b>Not:</b> PHP yapılandırma dosyanız (php.ini) şurada bulunuyor:',
+    'LBL_CHECKSYS_PHP_OK' => 'Tamam (sürüm ',
+    'LBL_CHECKSYS_PHPVER' => 'PHP Sürümü',
+    'LBL_CHECKSYS_RECHECK' => 'Yeniden Denetle',
+    'LBL_CHECKSYS_SAFE_MODE' => 'PHP Güvenli Kip Kapalı',
+    'LBL_CHECKSYS_SESSION' => 'Yazılabilir Oturum Kayıt Yolu (',
+    'LBL_CHECKSYS_STATUS' => 'Durum',
+    'LBL_CHECKSYS_TITLE' => 'Sistem Denetimi Onayı',
+    'LBL_CHECKSYS_XML' => 'XML İşleme',
+    'LBL_CLOSE' => 'Kapat',
+    'LBL_CONFIRM_BE_CREATED' => 'oluşturuldu',
+    'LBL_CONFIRM_DB_TYPE' => 'Veritabanı Türü',
+    'LBL_CONFIRM_DIRECTIONS' => 'Lütfen aşağıdaki ayarları onaylayın. Değerlerden herhangi birini değiştirmek için "Önceki" üzerine tıklayın. Her şey tamamsa kurulum işlemine başlamak için "Sonraki" üzerine tıklayın.',
+    'LBL_CONFIRM_LICENSE_TITLE' => 'Lisans Bilgileri',
+    'LBL_CONFIRM_NOT' => 'olmayacak',
+    'LBL_CONFIRM_TITLE' => 'Ayarları Onayla',
+    'LBL_CONFIRM_WILL' => 'olacak',
+    'LBL_DBCONF_CREATE_DB' => 'Veritabanı Oluştur',
+    'LBL_DBCONF_CREATE_USER' => 'Kullanıcı Ekle',
+    'LBL_DBCONF_DB_DROP_CREATE_WARN' => 'Uyarı: Bu seçenek işaretlendiğinde<br> tüm SuiteCRM verileri silinir.',
+    'LBL_DBCONF_DB_DROP_CREATE' => 'Var Olan SuiteCRM Tabloları Silinip Yeniden Oluşturulsun mu?',
+    'LBL_DBCONF_DB_NAME' => 'Veritabanı Adı',
+    'LBL_DBCONF_DB_PASSWORD' => 'Veritabanı Parolası',
+    'LBL_DBCONF_DB_PASSWORD2' => 'Veritabanı Parolasını Yeniden Yazın',
+    'LBL_DBCONF_DB_USER' => 'Veritabanı Kullanıcı Adı',
+    'LBL_DBCONF_DEMO_DATA' => 'Veritabanına Örnek Veriler Yüklensin mi?',
+    'LBL_DBCONF_HOST_NAME' => 'Sunucu Adı',
+    'LBL_DBCONF_INSTRUCTIONS' => 'Lütfen aşağıya veritabanı yapılandırma bilgilerinizi yazın. Ne yazacağınızdan emin değilseniz varsayılan değerleri kullanmanız önerilir.',
+    'LBL_DBCONF_MB_DEMO_DATA' => 'Örnek verilerde multi bayt metin kullanılsın',
+    'LBL_DBCONF_PRIV_PASS' => 'Yetkili Veritabanı Kullanıcı Parolası',
+    'LBL_DBCONF_PRIV_USER_2' => 'Yukarıdaki Veritabanı Hesabı Yetkili bir Kullanıcı mı?',
+    'LBL_DBCONF_PRIV_USER_DIRECTIONS' => 'Yeni bir veritabanı oluşturma, tablo silme ve ekleme ya da yeni bir kullanıcı ekleme gibi işlemler için, bu yetkili veritabanı kullanıcısına gerekli izinlerin verilmiş olması gereklidir. Bu kullanıcı ile bu işlemler yalnız kurulum sırasında gerekli olduğunda yapılır. Bu kullanıcının izinleri yeterliyse, yukarıdaki işlemler için aynı veritabanı kullanıcısını kullanabilirsiniz.',
+    'LBL_DBCONF_PRIV_USER' => 'Yetkili Veritabanı Kullanıcı Adı',
+    'LBL_DBCONF_TITLE' => 'Veritabanı  Ayarları',
+    'LBL_HELP' => 'Yardım',
+    'LBL_LICENSE_ACCEPTANCE' => 'Lisans Onayı',
+    'LBL_LICENSE_DIRECTIONS' => 'Varsa lisans bilgilerinizi aşağıdaki alanlara yazın.',
+    'LBL_LICENSE_DOWNLOAD_KEY' => 'İndirme Anahtarı',
+    'LBL_LICENSE_EXPIRY' => 'Son Geçerlilik Tarihi',
+    'LBL_LICENSE_I_ACCEPT' => 'Kabul Ediyorum',
+    'LBL_LICENSE_NUM_USERS' => 'Kullanıcı Sayısı',
+    'LBL_LICENSE_OC_DIRECTIONS' => 'Lütfen satın alınmış çevrimdışı istemci sayısını yazın.',
+    'LBL_LICENSE_OC_NUM' => 'Çevrimdışı İstemci Sayısı',
+    'LBL_LICENSE_OC' => 'Çevrimdışı İstemci Lisansları',
+    'LBL_LICENSE_PRINTABLE' => ' Yazdırılabilir Görünüm ',
+    'LBL_LICENSE_TITLE' => 'Lisans Bilgileri',
+    'LBL_LICENSE_TITLE_2' => 'SuiteCRM Lisansı',
+    'LBL_LICENSE_USERS' => 'Lisanslı Kullanıcılar',
+    'LBL_MYSQL' => 'MySQL',
+    'LBL_NEXT' => 'Sonraki',
+    'LBL_NO' => 'Hayır',
+    'LBL_ORACLE' => 'Oracle',
+    'LBL_PERFORM_ADMIN_PASSWORD' => 'Site yönetici parolası ayarlama',
+    'LBL_PERFORM_AUDIT_TABLE' => 'denetim tablosu / ',
+    'LBL_PERFORM_CONFIG_PHP' => 'SuiteCRM yapılandırma dosyası oluşturuluyor',
+    'LBL_PERFORM_CREATE_DB_1' => 'Veritabanı oluşturuluyor ',
+    'LBL_PERFORM_CREATE_DB_2' => ' açık ',
+    'LBL_PERFORM_CREATE_DB_USER' => 'Veritabanı kullanıcı adı ve parolası ekleniyor...',
+    'LBL_PERFORM_CREATE_DEFAULT' => 'Varsayılan SuiteCRM verileri ekleniyor',
+    'LBL_PERFORM_CREATE_LOCALHOST' => 'Localhost için veritabanı kullanıcı adı ve parolası ekleniyor...',
+    'LBL_PERFORM_CREATE_RELATIONSHIPS' => 'SuiteCRM ilişki tabloları ekleniyor',
+    'LBL_PERFORM_CREATING' => 'ekleniyor / ',
+    'LBL_PERFORM_DEFAULT_REPORTS' => 'Varsayılan raporlar ekleniyor',
+    'LBL_PERFORM_DEFAULT_SCHEDULER' => 'Varsayılan zamanlanmış görevler ekleniyor',
+    'LBL_PERFORM_DEFAULT_SETTINGS' => 'Varsayılan ayarlar ekleniyor',
+    'LBL_PERFORM_DEFAULT_USERS' => 'Varsayılan kullanıcılar ekleniyor',
+    'LBL_PERFORM_DEMO_DATA' => 'Veritabanı tablolarına örnek veriler ekleniyor (bu işlem biraz zaman alabilir)...',
+    'LBL_PERFORM_DONE' => 'tamamlandı<br>',
+    'LBL_PERFORM_DROPPING' => 'siliniyor / ',
+    'LBL_PERFORM_FINISH' => 'Bitti',
+    'LBL_PERFORM_LICENSE_SETTINGS' => 'Lisans bilgileri güncelleniyor',
+    'LBL_PERFORM_OUTRO_1' => 'SuiteCRM kurulumu ',
+    'LBL_PERFORM_OUTRO_2' => ' tamamlandı.',
+    'LBL_PERFORM_OUTRO_3' => 'Toplam süre:',
+    'LBL_PERFORM_OUTRO_4' => ' saniye.',
+    'LBL_PERFORM_OUTRO_5' => 'Yaklaşık bellek kullanımı: ',
+    'LBL_PERFORM_OUTRO_6' => ' bayt.',
+    'LBL_PERFORM_OUTRO_7' => 'Sisteminiz kuruldu ve kullanıma hazır olarak yapılandırıldı.',
+    'LBL_PERFORM_REL_META' => 'ilişki üst verisi ... ',
+    'LBL_PERFORM_SUCCESS' => 'Tamamlandı!',
+    'LBL_PERFORM_TABLES' => 'SuiteCRM uygulama tabloları, denetim tabloları ve ilişki üst verileri ekleniyor...',
+    'LBL_PERFORM_TITLE' => 'Kurulumu Başlat',
+    'LBL_PRINT' => 'Yazdır',
+    'LBL_REQUIRED' => '* Zorunlu Alan',
+    'LBL_SITECFG_ADMIN_PASS_2' => 'SuiteCRM <em>Yönetici</em> Parolası Onayı',
+    'LBL_SITECFG_ADMIN_PASS_WARN' => 'Dikkat: Bu işlem önceki kurulumdaki yönetici parolasını değiştirir.',
+    'LBL_SITECFG_ADMIN_PASS' => 'SuiteCRM <em>Yönetici</em> Parolası',
+    'LBL_SITECFG_APP_ID' => 'Uygulama Kodu',
+    'LBL_SITECFG_CUSTOM_ID_DIRECTIONS' => 'Açtığınız oturumların başka SuiteCRM kopyalarında kullanılamaması için otomatik olarak üretilen uygulama kodunu değiştirin. SuiteCRM kopyalarından oluşan bir kümeniz varsa, kümedeki tüm kopyaların aynı uygulama kodunu kullanması gerekir.',
+    'LBL_SITECFG_CUSTOM_ID' => 'Kendi Uygulama Kodunuzu Yazın',
+    'LBL_SITECFG_CUSTOM_LOG_DIRECTIONS' => 'SuiteCRM günlük kayıtlarının tutulacağı varsayılan klasörü değiştirin. Bir .htaccess yönlendirmesi ile bu klasöre web tarayıcı üzerinden erişim engelleneceğinden, günlük dosyasının nerede bulunduğu önemli değildir.',
+    'LBL_SITECFG_CUSTOM_LOG' => 'Kullanılacak Özel Günlük Klasörü',
+    'LBL_SITECFG_CUSTOM_SESSION_DIRECTIONS' => 'Paylaşılmış sunucularda oturum verilerine erişilmesini engellemek için SuiteCRM oturum bilgilerinin saklanacağı güvenli bir klasör belirtin.',
+    'LBL_SITECFG_CUSTOM_SESSION' => 'SuiteCRM için Özel Oturum Klasörü Kullanılsın',
+    'LBL_SITECFG_DIRECTIONS' => 'Lütfen aşağıya site yapılandırma bilgilerini yazın. Alanlardan emin değilseniz, varsayılan değerleri kullanmanız önerilir.',
+    'LBL_SITECFG_FIX_ERRORS' => 'Lütfen ilerlemeden önce aşağıdaki sorunları giderin:',
+    'LBL_SITECFG_LOG_DIR' => 'Günlük Klasörü',
+    'LBL_SITECFG_SESSION_PATH' => 'Oturum Klasörü Yolu<br>(yazılabilir olmalı)',
+    'LBL_SITECFG_SITE_SECURITY' => 'Gelişmiş Site Güvenliği',
+    'LBL_SITECFG_SUGAR_UP_DIRECTIONS' => 'Bu seçenek etkinleştirildiğinde, sisteminiz düzenli aralıklarla SuiteCRM kuruluşuna kurulumunuz hakkında anonim bilgiler içeren istatistik verileri gönderir. Böylece, kullanım şekillerini daha iyi anlayarak uygulamayı buna göre geliştirebiliriz. Bu bilgilerin sonucunda yöneticilere yeni yayınlanan sürüm ve güncellemeler hakkında bildirimler gönderilir.',
+    'LBL_SITECFG_SUGAR_UP' => 'SuiteCRM Güncellemeleri Alınsın',
+    'LBL_SITECFG_SUGAR_UPDATES' => 'SuiteCRM Güncelleme Ayarları',
+    'LBL_SITECFG_TITLE' => 'Site Ayarları',
+    'LBL_SITECFG_URL' => 'SuiteCRM Kopyasının Adresi',
+    'LBL_SITECFG_USE_DEFAULTS' => 'Varsayılanlar Kullanılsın ',
+    'LBL_START' => 'Başlat',
+    'LBL_STEP' => 'Adım',
+    'LBL_TITLE_WELCOME' => 'SuiteCRM Uygulamasına Hoş Geldiniz ',
+    'LBL_WELCOME_1' => 'Bu kurucu, SuiteCRM veritabanı tablolarını oluşturarak çalışmaya başlamak için gerekli yapılandırma değişkenlerini ayarlar. Tüm işlem on dakika kadar sürer.',
+    'LBL_WELCOME_2' => 'Kurulum işlemiyle ilgili yardım almak için SuiteCRM <a href="https://suitecrm.com/suitecrm/forum/suite-forum" target="_blank">destek forumlarına bakabilirsiniz</a>.',
+    'LBL_WELCOME_CHOOSE_LANGUAGE' => 'Dilinizi seçin',
+    'LBL_WELCOME_SETUP_WIZARD' => 'Kurulum Yardımcısı',
+    'LBL_WELCOME_TITLE_WELCOME' => 'SuiteCRM Uygulamasına Hoş Geldiniz ',
+    'LBL_WELCOME_TITLE' => 'SuiteCRM Kurulum Yardımcısı',
+    'LBL_WIZARD_TITLE' => 'SuiteCRM Kurulum Yardımcısı: Adım ',
+    'LBL_YES' => 'Evet',
+);

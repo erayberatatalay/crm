@@ -1,0 +1,29 @@
+Mon Apr 21 15:13:00 2025 [14020][1][SECURITY] OutboundEmail::checkSavePermissions - not logged in - skipping check
+Mon Apr 21 15:13:00 2025 [14020][1][FATAL] User update error: Temp User is not retrieved at ID 1, boolean given
+Mon Apr 21 15:13:00 2025 [14020][1][FATAL] Email address save error
+Mon Apr 21 15:13:11 2025 [14020][1][SECURITY] Invalid ext  logger_file_ext : ''.
+Mon Apr 21 15:13:11 2025 [14020][1][SECURITY] Setting logger_file_ext to '.log'.
+Mon Apr 21 15:13:11 2025 [14020][1][SECURITY] Setting logger_file_name to ''.
+Mon Apr 21 15:13:11 2025 [14020][1][SECURITY] Log file extension can't be blank.
+Mon Apr 21 15:13:11 2025 [14020][1][SECURITY] Setting logger_file_name to ''.
+Mon Apr 21 15:13:11 2025 [14020][1][SECURITY] Log file extension can't be blank.
+Mon Apr 21 16:15:10 2025 [12416][1][FATAL] Action = editLayout with unknown view=SearchView
+Mon Apr 21 16:15:43 2025 [12416][1][FATAL] Action = editLayout with unknown view=SearchView
+Mon Apr 21 16:16:43 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type custom is not recognized
+Mon Apr 21 16:16:43 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type custom is not recognized
+Mon Apr 21 16:16:54 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type custom is not recognized
+Mon Apr 21 16:16:54 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type custom is not recognized
+Mon Apr 21 16:16:54 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type rentalcore is not recognized
+Mon Apr 21 16:16:57 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type custom is not recognized
+Mon Apr 21 16:16:57 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type custom is not recognized
+Mon Apr 21 16:17:00 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type custom is not recognized
+Mon Apr 21 16:17:00 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type custom is not recognized
+Mon Apr 21 16:17:00 2025 [12416][1][FATAL] UndeployedMetaDataImplementation->getFileName(): view type rentalcore is not recognized
+Mon Apr 21 16:18:10 2025 [12416][1][FATAL] Exception handling in C:\xampp\htdocs\istencicrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 16:18:10 2025 [12416][1][FATAL] Exception in Controller: Syntax error in template "file:C:\xampp\htdocs\istencicrm\cache\themes\SuiteP\modules\RC_ProductPricing\SearchForm_advanced.tpl"  on line 97 "{php}$this->_tpl_vars['user_options'] = get_user_array(false);{/php}" unknown tag 'php'
+Mon Apr 21 16:18:19 2025 [12416][1][FATAL] Exception handling in C:\xampp\htdocs\istencicrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 16:18:19 2025 [12416][1][FATAL] Exception in Controller: Syntax error in template "file:C:\xampp\htdocs\istencicrm\cache\themes\SuiteP\modules\RC_ProductPricing\SearchForm_advanced.tpl"  on line 97 "{php}$this->_tpl_vars['user_options'] = get_user_array(false);{/php}" unknown tag 'php'
+Mon Apr 21 16:20:12 2025 [12416][1][FATAL] Exception handling in C:\xampp\htdocs\istencicrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 16:20:12 2025 [12416][1][FATAL] Exception in Controller: Subpanel was not defined
+Mon Apr 21 16:20:21 2025 [12416][1][FATAL] Exception handling in C:\xampp\htdocs\istencicrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 16:20:21 2025 [12416][1][FATAL] Exception in Controller: Syntax error in template "file:C:\xampp\htdocs\istencicrm\cache\themes\SuiteP\modules\RC_ProductPricing\SearchForm_advanced.tpl"  on line 97 "{php}$this->_tpl_vars['user_options'] = get_user_array(false);{/php}" unknown tag 'php'

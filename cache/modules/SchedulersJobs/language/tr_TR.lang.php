@@ -1,0 +1,28 @@
+<?php
+// created: 2025-04-21 16:17:49
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Atanmış Kullanıcı Kodu',
+  'LBL_ASSIGNED_TO_NAME' => 'Atanmış Kişi',
+  'LBL_NAME' => 'İş Adı',
+  'LBL_EXECUTE_TIME' => 'Çalıştırılma Zamanı',
+  'LBL_SCHEDULER_ID' => 'Zamanlanmış Görevler',
+  'LBL_STATUS' => 'İş Durumu',
+  'LBL_RESOLUTION' => 'Sonuç',
+  'LBL_MESSAGE' => 'İletiler',
+  'LBL_DATA' => 'İş Verileri',
+  'LBL_REQUEUE' => 'Başarısızlık durumunda yeniden dene',
+  'LBL_RETRY_COUNT' => 'En fazla yeniden deneme sayısı',
+  'LBL_FAIL_COUNT' => 'Başarısızlıklar',
+  'LBL_INTERVAL' => 'Denemeler arasındaki en az aralık',
+  'LBL_CLIENT' => 'Sahibi olan istemci',
+  'LBL_PERCENT' => 'Tamamlanma yüzdesi',
+  'ERR_CALL' => 'Şu işlev çağrılamadı: %s',
+  'ERR_CURL' => 'cURL Bulunamadı - Adres işlemlerini yapamazsınız',
+  'ERR_FAILED' => 'Beklenmeyen bir sorun çıktı. Lütfen PHP günlüklerini ve suitecrm.log dosyasını denetleyin',
+  'ERR_PHP' => '%s [%d]: %s %s içinde %d satırında',
+  'ERR_NOUSER' => 'İş için bir Kullanıcı Kodu belirtilmemiş',
+  'ERR_NOSUCHUSER' => '%s kullanıcı kodu bulunamadı',
+  'ERR_JOBTYPE' => 'İş türü bilinmiyor: %s',
+  'ERR_TIMEOUT' => 'Zaman aşımından dolayı başarısız oldu',
+  'ERR_JOB_FAILED_VERBOSE' => 'Zamanlanmış görev çalıştırıldığında %1$s (%2$s) işi tamamlanamadı',
+);

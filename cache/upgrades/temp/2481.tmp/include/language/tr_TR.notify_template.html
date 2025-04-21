@@ -1,0 +1,332 @@
+<!--
+/**
+ *
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2018 SalesAgility Ltd.
+ *
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License version 3 as published by the
+ * Free Software Foundation with the addition of the following permission added
+ * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
+ * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
+ * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ *
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ *
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU Affero General Public License version 3.
+ *
+ * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
+-->
+<!-- BEGIN: Quote_Subject -->
+<p>SuiteCRM Teklif - {QUOTE_SUBJECT}</p>
+<!-- END: Quote_Subject -->
+<!-- BEGIN: Quote -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Teklif atadı.</p>
+<p>
+Konu: {QUOTE_SUBJECT}<br/>
+Durum: {QUOTE_STATUS}<br/>
+Öngörülen Kapanış Tarihi: {QUOTE_CLOSEDATE}<br/>
+Açıklama: {QUOTE_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Teklifi inceleyebilirsiniz</a>.</p>
+<!-- END: Quote -->
+
+<!-- BEGIN: Account_Subject -->
+<p>SuiteCRM Hesabı - {ACCOUNT_NAME}</p>
+<!-- END: Account_Subject -->
+<!-- BEGIN: Account -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Hesap atadı.</p>
+<p>
+Ad: {ACCOUNT_NAME}<br/>
+Tür: {ACCOUNT_TYPE}<br/>
+Açıklama: {ACCOUNT_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Hesabı inceleyebilirsiniz</a>.</p>
+<!-- END: Account -->
+
+<!-- BEGIN: Case_Subject -->
+<p>SuiteCRM Destek Kaydı - {CASE_SUBJECT}</p>
+<!-- END: Case_Subject -->
+<!-- BEGIN: Case -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Destek Kaydı atadı.</p>
+<p>
+Konu: {CASE_SUBJECT}<br/>
+Öncelik: {CASE_PRIORITY}<br/>
+Durum: {CASE_STATUS}<br/>
+Açıklama: {CASE_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Sorunu inceleyebilirsiniz</a>.</p>
+<!-- END: Case -->
+
+<!-- BEGIN: Task_Subject -->
+<p>SuiteCRM Görev - {TASK_SUBJECT}</p>
+<!-- END: Task_Subject -->
+<!-- BEGIN: Task -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Görev atadı.</p>
+<p>
+Konu: {TASK_SUBJECT}<br/>
+Öncelik: {TASK_PRIORITY}<br/>
+Bitiş Tarihi: {TASK_DUEDATE}<br/>
+Durum: {TASK_STATUS}<br/>
+Açıklama: {TASK_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Görevi inceleyebilirsiniz</a>.</p>
+<!-- END: Task -->
+
+<!-- BEGIN: Meeting_Subject -->
+<p>SuiteCRM Toplantı - {MEETING_SUBJECT}</p>
+<!-- END: Meeting_Subject -->
+<!-- BEGIN: Meeting -->
+<p>Kime: {MEETING_TO}</p>
+<p><b>{ASSIGNER}</b> sizi bir Toplantıya çağırdı</p>
+<p>
+Konu: {MEETING_SUBJECT}<br/>
+Konum: {MEETING_LOCATION}<br/>
+Başlangıç Tarihi: {MEETING_STARTDATE}<br/>
+Bitiş Tarihi: {MEETING_ENDDATE}
+</p>
+<p>
+<!-- BEGIN: Meeting_External_API -->
+Toplantı Adresi: {MEETING_URL}
+</p>
+<!-- END: Meeting_External_API -->
+<p>Açıklama: {MEETING_DESCRIPTION}<br/>
+</p>
+<p>---</p>
+<p><a href={ACCEPT_URL}&accept_status=accept>Bu toplantıyı kabul et</a>.</p>
+<p><a href={ACCEPT_URL}&accept_status=tentative>Bu toplantıyı kesin olmayarak olarak kabul et</a>.</p>
+<p><a href={ACCEPT_URL}&accept_status=decline>Bu toplantıyı reddet</a>.</p>
+<!-- END: Meeting -->
+
+<!-- BEGIN: MeetingSpecial_Subject -->
+<p>SuiteCRM Toplantı - {MEETING_SUBJECT}</p>
+<!-- END: MeetingSpecial_Subject -->
+<!-- BEGIN: MeetingSpecial -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Toplantı atadı.</p>
+<p>
+Konu: {MEETING_SUBJECT}<br/>
+Konum: {MEETING_LOCATION}<br/>
+Durum: {MEETING_STATUS}<br/>
+Başlangıç Tarihi: {MEETING_STARTDATE}<br/>
+Bitiş Tarihi: {MEETING_ENDDATE}<br/>
+Açıklama: {MEETING_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Toplantıyı inceleyebilirsiniz</a>.</p>
+<!-- END: MeetingSpecial -->
+
+<!-- BEGIN: MeetingReminder_Subject -->
+<p>Toplantı Anımsatıcı - {MEETING_SUBJECT}</p>
+<!-- END: MeetingSpecial_Subject -->
+<!-- BEGIN: MeetingReminder -->
+<p>
+Başlık: {MEETING_SUBJECT} <br/>
+Zaman: {MEETING_STARTDATE} <br/> 
+Konum: {MEETING_LOCATION} <br/> 
+Ekleyen: {MEETING_CREATED_BY}
+</p>
+<!-- END: MeetingReminder -->
+
+<!-- BEGIN: Email_Subject -->
+<p>SuiteCRM E-posta - {EMAIL_SUBJECT}</p>
+<!-- END: Email_Subject -->
+<!-- BEGIN: Email -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir E-posta atadı.</p>
+<p>
+Konu: {EMAIL_SUBJECT}<br/>
+Gönderilme Tarihi: {EMAIL_DATESENT}
+</p>
+<p>Bu <a href={URL}>E-postayı inceleyebilirsiniz</a>.</p>
+<!-- END: Email -->
+
+<!-- BEGIN: Contact_Subject -->
+<p>SuiteCRM İlgili Kişi - {CONTACT_NAME}</p>
+<!-- END: Contact_Subject -->
+<!-- BEGIN: Contact -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir İlgili Kişi atadı.</p>
+<p>
+Ad: {CONTACT_NAME} <br/> 
+Açıklama: {CONTACT_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>İlgili Kişiyi inceleyebilirsiniz</a>.</p>
+<!-- END: Contact -->
+
+<!-- BEGIN: Lead_Subject -->
+<p>SuiteCRM Potansiyel - {LEAD_NAME}</p>
+<!-- END: Lead_Subject -->
+<!-- BEGIN: Lead -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Potansiyel atadı.</p>
+<p>
+Ad: {LEAD_NAME}<br/>
+Potansiyel Kaynağı: {LEAD_SOURCE}<br/>
+Durum: {LEAD_STATUS}<br/>
+Açıklama: {LEAD_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Potansiyeli inceleyebilirsiniz</a>.</p>
+<!-- END: Lead -->
+
+<!-- BEGIN: Opportunity_Subject -->
+<p>SuiteCRM Fırsat - {OPPORTUNITY_NAME}</p>
+<!-- END: Opportunity_Subject -->
+<!-- BEGIN: Opportunity -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Fırsat atadı.</p>
+<p>
+Adı: {OPPORTUNITY_NAME}<br/>
+Tutar: {OPPORTUNITY_AMOUNT}<br/>
+Öngörülen Kapanış Tarihi: {OPPORTUNITY_CLOSEDATE}<br/>
+Satış Aşaması: {OPPORTUNITY_STAGE}<br/>
+Açıklama: {OPPORTUNITY_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Fırsatı inceleyebilirsiniz</a>.</p>
+<!-- END: Opportunity -->
+
+<!-- BEGIN: Bug_Subject -->
+<p>SuiteCRM Hata - {BUG_SUBJECT}</p>
+<!-- END: Bug_Subject -->
+<!-- BEGIN: Bug -->
+<p><b>{ASSIGNER}</b>,  <b>{ASSIGNED_USER}</b> kullanıcısına bir Hata atadı.</p>
+<p>
+Hata Numarası: {BUG_BUG_NUMBER} <br/>
+Konu: {BUG_SUBJECT} <br/>
+Tür: {BUG_TYPE} <br/>
+Öncelik: {BUG_PRIORITY} <br/>
+Durum: {BUG_STATUS} <br/>
+Çözüm: {BUG_RESOLUTION} <br/>
+Yayın: {BUG_RELEASE} <br/>
+Açıklama: {BUG_DESCRIPTION} <br/>
+İş Günlüğü: {BUG_WORK_LOG}
+</p>
+<p>Bu <a href={URL}>Hatayı inceleyebilirsiniz</a>.</p>
+<!-- END: Bug -->
+
+<!-- BEGIN: Default_Subject -->
+<p>SuiteCRM - Atanmış {OBJECT}</p>
+<!-- END: Default_Subject -->
+<!-- BEGIN: Default -->
+<p><b>{ASSIGNER}</b>,  <b>{ASSIGNED_USER}</b> kullanıcısına bir {OBJECT} atadı.</p>
+<p>Bu <a href={URL}>{OBJECT} ögesini inceleyebilirsiniz</a>.</p>
+<!-- END: Default -->
+
+<!-- BEGIN: Call_Subject -->
+<p>SuiteCRM Telefon Araması - {CALL_SUBJECT}</p>
+<!-- END: Call_Subject -->
+<!-- BEGIN: Call -->
+<p>Kime: {CALL_TO}</p>
+<p><b>{ASSIGNER}</b> sizi bir telefon aramasına çağırdı</p>
+<p>
+Konu: {CALL_SUBJECT} <br/>
+Durum: {CALL_STATUS} <br/>
+Başlangıç Tarihi: {CALL_STARTDATE} <br/>
+Süre: {CALL_HOURS}s, {CALL_MINUTES}d <br/>
+Açıklama: {CALL_DESCRIPTION}<br/>
+</p>
+<p>---</p>
+<p><a href={ACCEPT_URL}&accept_status=accept>Bu telefon aramasını kabul et</a>.</p>
+<p><a href={ACCEPT_URL}&accept_status=tentative>Bu telefon aramasını kesin olmayarak kabul et</a>.</p>
+<p><a href={ACCEPT_URL}&accept_status=decline>Bu telefon aramasını reddet</a>.</p>
+<!-- END: Call -->
+
+<!-- BEGIN: CallSpecial_Subject -->
+<p>SuiteCRM Telefon Araması - {CALL_SUBJECT}</p>
+<!-- END: CallSpecial_Subject -->
+<!-- BEGIN: CallSpecial -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Telefon Araması atadı.</p>
+<p>
+Konu: {CALL_SUBJECT} <br/>
+Durum: {CALL_STATUS} <br/>
+Başlangıç Tarihi: {CALL_STARTDATE} <br/>
+Süre: {CALL_HOURS}s, {CALL_MINUTES}d <br/>
+Açıklama: {CALL_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Telefon Aramasını inceleyebilirsiniz</a>.</p>
+<!-- END: CallSpecial -->
+
+<!-- BEGIN: CallReminder_Subject -->
+<p>Telefon Araması Anımsatıcı - {CALL_SUBJECT}</p>
+<!-- END: CallReminder_Subject -->
+<!-- BEGIN: CallReminder -->
+<p>
+Konu: {CALL_SUBJECT} <br/>
+Zaman: {CALL_STARTDATE} <br/>
+Ekleyen: {CALL_CREATED_BY}
+</p>
+<!-- END: CallReminder -->
+
+<!-- BEGIN: Campaign_Subject -->
+<p>SuiteCRM Kampanya - {CAMPAIGN_NAME}</p>
+<!-- END: Campaign_Subject -->
+<!-- BEGIN: Campaign -->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Kampanya atadı.</p>
+<p>
+Konu: {CAMPAIGN_NAME} <br/>
+Tutar: {CAMPAIGN_AMOUNT} <br/>
+Kapanış Tarihi: {CAMPAIGN_CLOSEDATE} <br/>
+Durum: {CAMPAIGN_STATUS} <br/>
+Açıklama: {CAMPAIGN_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Kampanyayı inceleyebilirsiniz</a>.</p>
+<!-- END: Campaign -->
+
+<!-- BEGIN: Quota_Subject -->
+<p>SuiteCRM Kotaları - {QUOTA_TIMEPERIOD} için Kotanız</p>
+<!-- END: Quota_Subject -->
+<!-- BEGIN: Quota -->
+<p><b>{ASSIGNER}</b>,  <b>{ASSIGNED_USER}</b> kullanıcısına bir Kota atadı.</p>
+<p>
+    Tutar: {QUOTA_AMOUNT}<br/>
+    Zaman Aralığı: {QUOTA_TIMEPERIOD}
+</p>
+<p>Bu <a href={QUOTA_URL}>Kota atamasını inceleyebilirsiniz</a>.</p>
+<!-- END: Quota -->
+
+<!-- BEGIN: KBDocument_Subject -->
+<p>SuiteCRM Belge - {KBDOCUMENT_NAME}</p>
+<!-- END: KBDocument_Subject -->
+<!-- BEGIN: KBDocument -->
+{NOTIFICATION_MESSAGE}
+
+<p>
+Ad: {KBDOCUMENT_NAME} <br/>
+Eklenme Tarihi: {KBDOCUMENT_DATE_CREATED} <br/>
+Ekleyen: {KBDOCUMENT_CREATED_BY} <br/>
+Durum: {KBDOCUMENT_STATUS} <br/> 
+Açıklama: {KBDOCUMENT_DESCRIPTION}
+</p>
+<p>Bu <a href={URL}>Belgeyi inceleyebilirsiniz</a>.</p>
+<!-- END: KBDocument -->
+
+<!-- BEGIN: Contract_Subject -->
+<p>SuiteCRM Sözleşme - {CONTRACT_NAME}</p>
+<!-- END: Contract_Subject -->
+<!-- BEGIN: Contract-->
+<p><b>{ASSIGNER}</b>, <b>{ASSIGNED_USER}</b> kullanıcısına bir Sözleşme atadı.</p>
+<p>Bu <a href={URL}>Sözleşmeyi inceleyebilirsiniz</a>.</p>
+<!-- END:Contract-->
+
+<!-- BEGIN: ContractSpecial_Subject -->
+<p>SuiteCRM Sözleşme - {CONTRACT_NAME}</p>
+<!-- END: ContractSpecial_Subject -->
+<!-- BEGIN: ContractSpecial -->
+<p>Sözleşmeniz: {CONTRACT_NAME}, {CONTRACT_END_DATE} tarihinde bitecek.</p>
+<p>Bu <a href={URL}>Sözleşmeyi inceleyebilirsiniz</a>.</p>
+<!-- END:ContractSpecial-->

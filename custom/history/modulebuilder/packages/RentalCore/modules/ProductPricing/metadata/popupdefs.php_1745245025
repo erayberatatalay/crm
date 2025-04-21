@@ -1,0 +1,61 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'RC_ProductPricing',
+    'varName' => 'RC_ProductPricing',
+    'orderBy' => 'rc_productpricing.name',
+    'whereClauses' => array (
+  'name' => 'rc_productpricing.name',
+),
+    'searchInputs' => array (
+  0 => 'rc_productpricing_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'DAY_COUNT' => 
+  array (
+    'type' => 'int',
+    'label' => 'LBL_DAY_COUNT',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'day_count',
+  ),
+  'PRICE' => 
+  array (
+    'type' => 'currency',
+    'label' => 'LBL_PRICE',
+    'currency_format' => true,
+    'width' => '10%',
+    'default' => true,
+    'name' => 'price',
+  ),
+  'CREATED_BY_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_CREATED',
+    'id' => 'CREATED_BY',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'created_by_name',
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'date_entered',
+  ),
+  'RC_PRODUCTPRICING_AOS_PRODUCTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_RC_PRODUCTPRICING_AOS_PRODUCTS_FROM_AOS_PRODUCTS_TITLE',
+    'id' => 'RC_PRODUCTPRICING_AOS_PRODUCTSAOS_PRODUCTS_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
+),
+);
