@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:56
+// created: 2025-04-22 17:49:10
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -25,14 +25,14 @@ $mod_strings = array (
   'LBL_ASSIGNED_TO_NAME' => 'Atanmış Kişi',
   'LBL_SECURITYGROUPS' => 'Güvenlik Grupları',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Güvenlik Grupları',
-  'LBL_LIST_FORM_TITLE' => 'Product Pricing Liste',
+  'LBL_LIST_FORM_TITLE' => 'Fiyat Kategorisi Liste',
   'LBL_MODULE_NAME' => 'Product Pricing',
   'LBL_MODULE_TITLE' => 'Product Pricing',
-  'LBL_HOMEPAGE_TITLE' => 'Benim Product Pricing',
-  'LNK_NEW_RECORD' => 'Ekle Product Pricing',
-  'LNK_LIST' => 'Görünüm Product Pricing',
-  'LNK_IMPORT_RC_PRODUCTPRICING' => 'İçe Aktar Product Pricing',
-  'LBL_SEARCH_FORM_TITLE' => 'Arama Product Pricing',
+  'LBL_HOMEPAGE_TITLE' => 'Benim Fiyat Kategorileri',
+  'LNK_NEW_RECORD' => 'Ekle Fiyat Kategorileri',
+  'LNK_LIST' => 'Görünüm Fiyat Kategorileri',
+  'LNK_IMPORT_RC_PRODUCTPRICING' => 'İçe Aktar Fiyat Kategorileri',
+  'LBL_SEARCH_FORM_TITLE' => 'Arama Fiyat Kategorisi',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'Geçmişi Görüntüle',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'İşlemler',
   'LBL_RC_PRODUCTPRICING_SUBPANEL_TITLE' => 'Product Pricing',

@@ -244,48 +244,14 @@
       'options' => 'product_code_dom',
       'studio' => 'visible',
     ),
-    'part_number' => 
+    'status_c' => 
     array (
       'required' => false,
-      'name' => 'part_number',
-      'vname' => 'LBL_PART_NUMBER',
-      'type' => 'varchar',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => 1,
-      'reportable' => true,
-      'len' => '25',
-    ),
-    'category' => 
-    array (
-      'required' => false,
-      'name' => 'category',
-      'vname' => 'LBL_CATEGORY',
+      'name' => 'status_c',
+      'vname' => 'LBL_STATUS',
       'type' => 'enum',
       'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => 0,
-      'reportable' => true,
-      'len' => 100,
-      'options' => 'product_category_dom',
-      'studio' => 'visible',
-    ),
-    'type' => 
-    array (
-      'required' => false,
-      'name' => 'type',
-      'vname' => 'LBL_TYPE',
-      'type' => 'enum',
-      'massupdate' => 0,
-      'default' => 'Good',
+      'default' => '',
       'comments' => '',
       'help' => '',
       'importable' => 'true',
@@ -296,6 +262,9 @@
       'len' => 100,
       'options' => 'product_type_dom',
       'studio' => 'visible',
+      'source' => 'custom_fields',
+      'inline_edit' => true,
+      'merge_filter' => 'disabled',
     ),
     'cost' => 
     array (
@@ -359,42 +328,6 @@
         'onListView' => true,
       ),
     ),
-    'price' => 
-    array (
-      'required' => '1',
-      'name' => 'price',
-      'vname' => 'LBL_PRICE',
-      'type' => 'currency',
-      'len' => '26,6',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => 1,
-      'reportable' => true,
-      'enable_range_search' => true,
-      'options' => 'numeric_range_search_dom',
-    ),
-    'price_usdollar' => 
-    array (
-      'name' => 'price_usdollar',
-      'vname' => 'LBL_PRICE_USDOLLAR',
-      'type' => 'currency',
-      'disable_num_format' => true,
-      'group' => 'price',
-      'duplicate_merge' => '0',
-      'audited' => true,
-      'comment' => '',
-      'studio' => 
-      array (
-        'editview' => false,
-        'detailview' => false,
-        'quickcreate' => false,
-      ),
-      'len' => '26,6',
-    ),
     'url' => 
     array (
       'required' => false,
@@ -410,44 +343,6 @@
       'audited' => 1,
       'reportable' => true,
       'len' => '255',
-    ),
-    'contact_id' => 
-    array (
-      'required' => false,
-      'name' => 'contact_id',
-      'vname' => '',
-      'type' => 'id',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => 0,
-      'audited' => 0,
-      'reportable' => 0,
-      'len' => 36,
-    ),
-    'contact' => 
-    array (
-      'required' => false,
-      'source' => 'non-db',
-      'name' => 'contact',
-      'vname' => 'LBL_CONTACT',
-      'type' => 'relate',
-      'massupdate' => 0,
-      'comments' => '',
-      'help' => '',
-      'importable' => 'true',
-      'duplicate_merge' => 'disabled',
-      'duplicate_merge_dom_value' => '0',
-      'audited' => 1,
-      'reportable' => true,
-      'len' => '255',
-      'id_name' => 'contact_id',
-      'ext2' => 'Contacts',
-      'module' => 'Contacts',
-      'quicksearch' => 'enabled',
-      'studio' => 'visible',
     ),
     'product_image' => 
     array (
@@ -524,6 +419,8 @@
       'len' => '100',
       'required' => false,
       'source' => 'custom_fields',
+      'inline_edit' => true,
+      'merge_filter' => 'disabled',
     ),
     'model' => 
     array (
@@ -533,6 +430,8 @@
       'len' => '100',
       'required' => false,
       'source' => 'custom_fields',
+      'inline_edit' => true,
+      'merge_filter' => 'disabled',
     ),
     'tech_specs' => 
     array (
@@ -541,6 +440,20 @@
       'type' => 'text',
       'required' => false,
       'source' => 'custom_fields',
+      'inline_edit' => true,
+      'merge_filter' => 'disabled',
+      'rows' => '4',
+      'cols' => '20',
+    ),
+    'rc_inventory_aos_products_1' => 
+    array (
+      'name' => 'rc_inventory_aos_products_1',
+      'type' => 'link',
+      'relationship' => 'rc_inventory_aos_products_1',
+      'source' => 'non-db',
+      'module' => 'RC_Inventory',
+      'bean_name' => 'RC_Inventory',
+      'vname' => 'LBL_RC_INVENTORY_AOS_PRODUCTS_1_FROM_RC_INVENTORY_TITLE',
     ),
     'rc_productpricing_aos_products' => 
     array (

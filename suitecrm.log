@@ -27,3 +27,54 @@ Mon Apr 21 16:20:12 2025 [12416][1][FATAL] Exception handling in C:\xampp\htdocs
 Mon Apr 21 16:20:12 2025 [12416][1][FATAL] Exception in Controller: Subpanel was not defined
 Mon Apr 21 16:20:21 2025 [12416][1][FATAL] Exception handling in C:\xampp\htdocs\istencicrm\include\MVC\Controller\SugarController.php:397
 Mon Apr 21 16:20:21 2025 [12416][1][FATAL] Exception in Controller: Syntax error in template "file:C:\xampp\htdocs\istencicrm\cache\themes\SuiteP\modules\RC_ProductPricing\SearchForm_advanced.tpl"  on line 97 "{php}$this->_tpl_vars['user_options'] = get_user_array(false);{/php}" unknown tag 'php'
+Mon Apr 21 18:22:19 2025 [5552][1][FATAL] Mysqli_query failed.
+Mon Apr 21 18:22:19 2025 [5552][1][FATAL] Executing repair query:  Query Failed: CREATE TABLE rc_productpricing (`id` char(36)  NOT NULL ,`name` varchar(255)  NULL ,`date_entered` datetime  NULL ,`date_modified` datetime  NULL ,`modified_user_id` char(36)  NULL ,`created_by` char(36)  NULL ,`description` text  NULL ,`deleted` bool  DEFAULT '0' NULL ,`assigned_user_id` char(36)  NULL ,`day_count` int(25)  NULL ,`price` decimal(26,6)  NULL ,`currency_id` char(36)  NULL  , PRIMARY KEY (id)) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci: MySQL error 1050: Table 'rc_productpricing' already exists
+Mon Apr 21 18:22:19 2025 [5552][1][FATAL] Exception handling in C:\xampp8.2\htdocs\suitecrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 18:22:19 2025 [5552][1][FATAL] Exception in Controller: Veritabanı sorunu. Ayrıntılı bilgi almak için sugarcrm.log dosyasına bakın.
+Mon Apr 21 18:23:31 2025 [5552][1][FATAL] Exception handling in C:\xampp8.2\htdocs\suitecrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 18:23:31 2025 [5552][1][FATAL] Exception in Controller: Syntax error in template "file:C:\xampp8.2\htdocs\suitecrm\cache\themes\SuiteP\modules\RC_ProductPricing\SearchForm_basic.tpl"  on line 95 "{php}$this->_tpl_vars['user_options'] = get_user_array(false);{/php}" unknown tag 'php'
+Mon Apr 21 18:27:32 2025 [5440][1][FATAL] IP Address mismatch: SESSION IP: ::1 CLIENT IP: 127.0.0.1
+Mon Apr 21 19:54:38 2025 [9756][-none-][FATAL] SECURITY: User authentication for root failed
+Mon Apr 21 19:54:38 2025 [9756][-none-][FATAL] FAILED LOGIN:attempts[1], ip[::1], username[root]
+Mon Apr 21 22:24:19 2025 [8924][1][FATAL] Mysqli_query failed.
+Mon Apr 21 22:24:19 2025 [8924][1][FATAL] Executing repair query:  Query Failed: ALTER TABLE aos_products   add COLUMN `status` varchar(100)  DEFAULT 'Good' NULL: MySQL error 1060: Duplicate column name 'status'
+Mon Apr 21 22:24:19 2025 [8924][1][FATAL] Exception handling in C:\xampp8.2\htdocs\suitecrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 22:24:19 2025 [8924][1][FATAL] Exception in Controller: Veritabanı sorunu. Ayrıntılı bilgi almak için sugarcrm.log dosyasına bakın.
+Mon Apr 21 22:32:25 2025 [8924][1][FATAL] Mysqli_query failed.
+Mon Apr 21 22:32:25 2025 [8924][1][FATAL] Executing repair query:  Query Failed: ALTER TABLE aos_products   add COLUMN `status` varchar(100)  DEFAULT 'Good' NULL: MySQL error 1060: Duplicate column name 'status'
+Mon Apr 21 22:32:25 2025 [8924][1][FATAL] Exception handling in C:\xampp8.2\htdocs\suitecrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 22:32:25 2025 [8924][1][FATAL] Exception in Controller: Veritabanı sorunu. Ayrıntılı bilgi almak için sugarcrm.log dosyasına bakın.
+Mon Apr 21 23:04:05 2025 [8924][1][FATAL] Exception handling in C:\xampp8.2\htdocs\suitecrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 23:04:05 2025 [8924][1][FATAL] Exception in Controller: Invalid compiled template for 'themes/SuiteP/tpls/header.tpl'
+Mon Apr 21 23:05:58 2025 [8924][1][FATAL] Exception handling in C:\xampp8.2\htdocs\suitecrm\include\MVC\Controller\SugarController.php:397
+Mon Apr 21 23:05:58 2025 [8924][1][FATAL] Exception in Controller: 
+Tue Apr 22 00:24:23 2025 [8924][1][FATAL] Exception handling in C:\xampp8.2\htdocs\suitecrm\include\MVC\Controller\SugarController.php:397
+Tue Apr 22 00:24:23 2025 [8924][1][FATAL] Exception in Controller: Invalid compiled template for 'themes\SuiteP\include/SearchForm/tpls/footer.tpl'
+Tue Apr 22 00:32:05 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 00:32:12 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 00:32:22 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 00:36:25 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 00:37:26 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 00:44:06 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 00:45:25 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 00:46:46 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 00:47:10 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 01:49:47 2025 [8924][1][FATAL] Hata: RS_Product modülü bulunamadı.
+Tue Apr 22 14:55:11 2025 [14852][1][FATAL] Class Connectors does not exist, unable to rename.
+Tue Apr 22 14:55:11 2025 [14852][1][FATAL] Class Version does not exist, unable to rename.
+Tue Apr 22 14:55:12 2025 [14852][1][FATAL] Class CustomFields does not exist, unable to rename.
+Tue Apr 22 17:10:03 2025 [12584][1][FATAL] Class Connectors does not exist, unable to rename.
+Tue Apr 22 17:10:03 2025 [12584][1][FATAL] Class Version does not exist, unable to rename.
+Tue Apr 22 17:10:03 2025 [12584][1][FATAL] Class CustomFields does not exist, unable to rename.
+Tue Apr 22 17:10:26 2025 [12584][1][FATAL] Class Connectors does not exist, unable to rename.
+Tue Apr 22 17:10:26 2025 [12584][1][FATAL] Class Version does not exist, unable to rename.
+Tue Apr 22 17:10:26 2025 [12584][1][FATAL] Class CustomFields does not exist, unable to rename.
+Tue Apr 22 17:16:15 2025 [12584][1][FATAL] Email address save error
+Tue Apr 22 17:17:27 2025 [12584][1][FATAL] Email address save error
+Tue Apr 22 17:17:47 2025 [12584][-none-][FATAL] SECURITY: User authentication for  ugur.eray failed
+Tue Apr 22 17:17:47 2025 [12584][-none-][FATAL] FAILED LOGIN:attempts[1], ip[::1], username[ ugur.eray]
+Tue Apr 22 17:17:53 2025 [12584][-none-][FATAL] SECURITY: User authentication for  ugur.eray failed
+Tue Apr 22 17:17:53 2025 [12584][-none-][FATAL] FAILED LOGIN:attempts[1], ip[::1], username[ ugur.eray]
+Tue Apr 22 17:18:16 2025 [12584][11111111-aaaa-bbbb-cccc-000000000001][FATAL] Email address save error
+Tue Apr 22 17:23:01 2025 [12584][-none-][FATAL] SECURITY: User authentication for  ugur.eray failed
+Tue Apr 22 17:23:01 2025 [12584][-none-][FATAL] FAILED LOGIN:attempts[1], ip[::1], username[ ugur.eray]

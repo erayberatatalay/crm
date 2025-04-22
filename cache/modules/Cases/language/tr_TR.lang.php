@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:48
+// created: 2025-04-22 17:49:04
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi:',
@@ -48,8 +48,8 @@ $mod_strings = array (
   'LBL_SUGGESTION_BOX_STATUS' => 'Durum',
   'LBL_SUGGESTION_BOX_TITLE' => 'Başlık',
   'LBL_SUGGESTION_BOX_REL' => 'İlişki',
-  'LBL_ACCOUNT_ID' => 'Hesap Kodu',
-  'LBL_ACCOUNT_NAME' => 'Hesap Adı:',
+  'LBL_ACCOUNT_ID' => 'Müşteri Kodu',
+  'LBL_ACCOUNT_NAME' => 'Müşteri Adı:',
   'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Hesaplar',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'İşlemler',
   'LBL_BUGS_SUBPANEL_TITLE' => 'Hatalar',
@@ -57,7 +57,7 @@ $mod_strings = array (
   'LBL_CASE' => 'Destek Kaydı:',
   'LBL_CONTACT_NAME' => 'İlgili Adı:',
   'LBL_CONTACT_ROLE' => 'Rol:',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kişiler',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kontaklar',
   'LBL_DEFAULT_SUBPANEL_TITLE' => 'Destek Kayıtları',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'Geçmiş',
   'LBL_INVITEE' => 'İlgili Kişiler',
@@ -69,7 +69,7 @@ $mod_strings = array (
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Belgeler',
   'LBL_SEARCH_FORM_TITLE' => 'Destek Kaydı Arama',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Atanmış Kullanıcı',
-  'LBL_LIST_ACCOUNT_NAME' => 'Hesap Adı',
+  'LBL_LIST_ACCOUNT_NAME' => 'Müşteri Adı',
   'LBL_LIST_ASSIGNED' => 'Atanmış Kişi',
   'LBL_LIST_CLOSE' => 'Kapat',
   'LBL_LIST_FORM_TITLE' => 'Destek Kaydı Listesi',
@@ -103,4 +103,6 @@ $mod_strings = array (
   'LBL_CONTACT_CREATED_BY_NAME' => 'Ekleyen kişi',
   'LBL_CONTACT_CREATED_BY' => 'Ekleyen',
   'LBL_CASE_UPDATE_FORM' => 'Güncellemeler - Ek dosya formu',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
+  'LBL_ACCOUNT' => 'Müşteri',
 );

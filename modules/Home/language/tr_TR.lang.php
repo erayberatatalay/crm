@@ -239,7 +239,7 @@ $mod_strings = array(
     'LBL_HOURS_ABBREV' => 'saat',
     'LBL_MINSS_ABBREV' => 'dakika',
     'LBL_LOCATION' => 'Konum:',
-    'LBL_STATUS' => 'Durum:',
+    'LBL_STATUS' => 'Durum',
     'LBL_DESCRIPTION' => 'Açıklama: ',
     //End Events
 

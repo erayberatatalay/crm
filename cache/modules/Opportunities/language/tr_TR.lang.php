@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:49
+// created: 2025-04-22 17:49:06
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -34,16 +34,16 @@ $mod_strings = array (
   'LBL_INVITEE' => 'İlgili Kişiler',
   'LBL_CURRENCIES' => 'Para Birimleri',
   'LBL_LIST_OPPORTUNITY_NAME' => 'Ad',
-  'LBL_LIST_ACCOUNT_NAME' => 'Hesap Adı',
+  'LBL_LIST_ACCOUNT_NAME' => 'Müşteri Adı',
   'LBL_LIST_AMOUNT' => 'Fırsat Tutarı',
   'LBL_LIST_AMOUNT_USDOLLAR' => 'Tutar',
   'LBL_LIST_DATE_CLOSED' => 'Kapat',
   'LBL_LIST_SALES_STAGE' => 'Satış Aşaması',
-  'LBL_ACCOUNT_ID' => 'Hesap Kodu',
+  'LBL_ACCOUNT_ID' => 'Müşteri Kodu',
   'LBL_CURRENCY_NAME' => 'Para Birimi',
   'LBL_CURRENCY_SYMBOL' => 'Para Birimi Simgesi',
   'UPDATE' => 'Fırsat - Para Birimi Güncelle',
-  'LBL_ACCOUNT_NAME' => 'Hesap Adı:',
+  'LBL_ACCOUNT_NAME' => 'Müşteri Adı:',
   'LBL_AMOUNT' => 'Fırsat Tutarı:',
   'LBL_AMOUNT_USDOLLAR' => 'Tutar:',
   'LBL_CURRENCY' => 'Para Birimi:',
@@ -66,7 +66,7 @@ $mod_strings = array (
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'İşlemler',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'Geçmiş',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Potansiyeller',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kişiler',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kontaklar',
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Belgeler',
   'LBL_PROJECTS_SUBPANEL_TITLE' => 'Projeler',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Atanmış Kullanıcı',
@@ -79,4 +79,6 @@ $mod_strings = array (
   'LBL_EDITLAYOUT' => 'Görünümü Düzenle',
   'LBL_AOS_CONTRACTS' => 'Sözleşmeler',
   'LBL_AOS_QUOTES' => 'Teklifler',
+  'LBL_ACCOUNTS' => 'Müşteriler',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
 );

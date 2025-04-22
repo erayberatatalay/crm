@@ -1,5 +1,5 @@
 <?php
- // created: 2025-04-21 16:17:20
+ // created: 2025-04-21 18:23:08
 $layout_defs["AOS_Products"]["subpanel_setup"]['rc_productpricing_aos_products'] = array (
   'order' => 100,
   'module' => 'RC_ProductPricing',

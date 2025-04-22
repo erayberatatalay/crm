@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:48
+// created: 2025-04-22 17:49:05
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -80,7 +80,7 @@ $mod_strings = array (
   'LBL_NEW_FORM_TITLE' => 'Yeni Kampanya',
   'LBL_TRACKED_URLS' => 'İzleyici Adresleri',
   'LBL_TRACKED_URLS_SUBPANEL_TITLE' => 'İzleyici Adresleri',
-  'LBL_CAMPAIGN_ACCOUNTS_SUBPANEL_TITLE' => 'Hesaplar',
+  'LBL_CAMPAIGN_ACCOUNTS_SUBPANEL_TITLE' => 'Müşteriler',
   'LBL_PROSPECT_LIST_SUBPANEL_TITLE' => 'Hedef Listesi',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'Geçmiş',
   'LBL_EMAIL_MARKETING_SUBPANEL_TITLE' => 'E-posta Pazarlaması',
@@ -366,8 +366,8 @@ $mod_strings = array (
   'LBL_TOP_CAMPAIGNS_REVENUE' => 'Kazanç',
   'LBL_TOP_CAMPAIGNS_DESCRIPTION' => 'Kazanca Göre Önde Gelen Kampanyalar',
   'LBL_LEADS' => 'Potansiyeller',
-  'LBL_CONTACTS' => 'İlgili Kişiler',
-  'LBL_ACCOUNTS' => 'Hesaplar',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
+  'LBL_ACCOUNTS' => 'Müşteriler',
   'LBL_OPPORTUNITIES' => 'Fırsatlar',
   'LBL_LOG_ENTRIES' => 'Günlük Kayıtları',
   'LBL_PROSPECTLISTS_SUBPANEL_TITLE' => 'Potansiyel Listesi',

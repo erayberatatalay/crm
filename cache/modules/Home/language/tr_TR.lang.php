@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:18:02
+// created: 2025-04-22 17:49:05
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Ana Sayfa',
   'LBL_NEW_FORM_TITLE' => 'Yeni İlgili Kişi',
@@ -173,7 +173,7 @@ $mod_strings = array (
   'LBL_HOURS_ABBREV' => 'saat',
   'LBL_MINSS_ABBREV' => 'dakika',
   'LBL_LOCATION' => 'Konum:',
-  'LBL_STATUS' => 'Durum:',
+  'LBL_STATUS' => 'Durum',
   'LBL_DESCRIPTION' => 'Açıklama: ',
   'LBL_ELASTIC_SEARCH_EXCEPTION_SEARCH_INVALID_REQUEST' => 'Arama yapılırken bir sorun çıktı. Sorgu söz dizimi geçersiz olabilir.',
   'LBL_ELASTIC_SEARCH_EXCEPTION_SEARCH_ENGINE_NOT_FOUND' => 'İstenilen Arama Motoru bulunamadı. Lütfen yeniden aramayı deneyin.',

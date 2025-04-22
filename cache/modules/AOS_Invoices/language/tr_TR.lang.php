@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:53
+// created: 2025-04-22 17:49:07
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -102,8 +102,8 @@ $mod_strings = array (
   'LBL_TERMS_C' => 'Koşullar',
   'LBL_APPROVAL_ISSUE' => 'Onay Sorunları',
   'LBL_APPROVAL_STATUS' => 'Onay Durumu',
-  'LBL_BILLING_ACCOUNT' => 'Hesap',
-  'LBL_BILLING_CONTACT' => 'İlgili',
+  'LBL_BILLING_ACCOUNT' => 'Müşteri',
+  'LBL_BILLING_CONTACT' => 'Kontak',
   'LBL_EXPIRATION' => 'Geçerlilik Tarihi',
   'LBL_INVOICE_NUMBER' => 'Fatura Numarası',
   'LBL_OPPORTUNITY' => 'Fırsat Adı',
@@ -169,4 +169,6 @@ $mod_strings = array (
   'LBL_AOS_LINE_ITEM_GROUPS' => 'Satır Ögesi Grupları',
   'LBL_AOS_PRODUCT_QUOTES' => 'Ürün Teklifleri',
   'LBL_AOS_QUOTES_AOS_INVOICES' => 'Teklifler: Faturalar',
+  'LBL_ACCOUNTS' => 'Müşteriler',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
 );

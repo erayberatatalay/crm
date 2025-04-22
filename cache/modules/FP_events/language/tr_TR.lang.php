@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:51
+// created: 2025-04-22 17:49:08
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -72,7 +72,7 @@ $mod_strings = array (
   'LBL_ERROR_MSG_4' => ' e-postalar gönderilemedi. Lütfen çağırdığınız tüm kişilerin e-posta adreslerinin geçerli olup olmadığını denetleyin (suitecrm.log dosyasına bakın).',
   'LBL_ERROR_MSG_5' => 'E-posta Kalıbı Geçersiz',
   'LBL_EMAIL_INVITE' => 'E-posta Çağrısı',
-  'LBL_FP_EVENTS_CONTACTS_FROM_CONTACTS_TITLE' => 'İlgili Kişiler',
+  'LBL_FP_EVENTS_CONTACTS_FROM_CONTACTS_TITLE' => 'İlgili Kontaklar',
   'LBL_FP_EVENT_LOCATIONS_FP_EVENTS_1_FROM_FP_EVENT_LOCATIONS_TITLE' => 'Konumlar',
   'LBL_FP_EVENTS_LEADS_1_FROM_LEADS_TITLE' => 'Potansiyeller',
   'LBL_FP_EVENTS_PROSPECTS_1_FROM_PROSPECTS_TITLE' => 'Hedefler',

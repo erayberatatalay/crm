@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:54
+// created: 2025-04-22 17:49:12
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -156,4 +156,6 @@ $mod_strings = array (
   'LBL_GET_GOOGLE_API_KEY' => 'Bir Anahtar Edinin',
   'LBL_GOOGLE_API_KEY' => 'Google API Anahtarı',
   'LBL_ERROR_NO_GOOGLE_API_KEY' => 'Lütfen Google Haritalar Yönetim Panosundaki Google API Anahtarını ayarlayın.',
+  'LBL_ACCOUNTS' => 'Müşteriler',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
 );

@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:20
+// created: 2025-04-21 18:23:08
 $dictionary["rc_productpricing_aos_products"] = array (
   'true_relationship_type' => 'one-to-many',
   'relationships' => 

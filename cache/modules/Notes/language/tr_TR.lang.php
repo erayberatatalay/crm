@@ -1,16 +1,16 @@
 <?php
-// created: 2025-04-21 16:17:49
+// created: 2025-04-22 17:49:07
 $mod_strings = array (
   'LBL_ASSIGNED_TO_ID' => 'Atanmış Kullanıcı Kodu',
   'LBL_ASSIGNED_TO_NAME' => 'Atanmış Kişi',
   'LBL_SECURITYGROUPS' => 'Güvenlik Grupları',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Güvenlik Grupları',
   'ERR_DELETE_RECORD' => 'Hesabı silmek için bir kayıt numarası yazmalısınız.',
-  'LBL_ACCOUNT_ID' => 'Hesap Kodu:',
+  'LBL_ACCOUNT_ID' => 'Müşteri Kodu:',
   'LBL_CASE_ID' => 'Destek Kaydı Kodu:',
   'LBL_CLOSE' => 'Kapat:',
-  'LBL_CONTACT_ID' => 'İlgili Kişi Kodu:',
-  'LBL_CONTACT_NAME' => 'İlgili Kişi:',
+  'LBL_CONTACT_ID' => 'Kontak Kişi Kodu:',
+  'LBL_CONTACT_NAME' => 'Kontak Kişi:',
   'LBL_DEFAULT_SUBPANEL_TITLE' => 'Notlar',
   'LBL_DESCRIPTION' => 'Not',
   'LBL_EMAIL_ADDRESS' => 'E-posta Adresi:',
@@ -19,14 +19,14 @@ $mod_strings = array (
   'LBL_FILE_URL' => 'Dosya Adresi',
   'LBL_FILENAME' => 'Ek Dosya:',
   'LBL_LEAD_ID' => 'Potansiyel Kodu:',
-  'LBL_LIST_CONTACT_NAME' => 'İlgili kişi',
+  'LBL_LIST_CONTACT_NAME' => 'Kontak kişi',
   'LBL_LIST_DATE_MODIFIED' => 'Son Değişiklik',
   'LBL_LIST_FILENAME' => 'Ek Dosya',
   'LBL_LIST_FORM_TITLE' => 'Not Listesi',
   'LBL_LIST_RELATED_TO' => 'İlişkili',
   'LBL_LIST_SUBJECT' => 'Konu',
   'LBL_LIST_STATUS' => 'Durum',
-  'LBL_LIST_CONTACT' => 'İlgili Kişi',
+  'LBL_LIST_CONTACT' => 'Kontak Kişi',
   'LBL_MODULE_NAME' => 'Notlar',
   'LBL_MODULE_TITLE' => 'Notlar: Ana Sayfa',
   'LBL_NEW_FORM_TITLE' => 'Not ya da Dosya Ekle',
@@ -65,4 +65,5 @@ $mod_strings = array (
   'LBL_DATE_MODIFIED' => 'Değiştirilme Tarihi',
   'LBL_DELETED' => 'Silindi',
   'LBL_FILE_CONTENTS' => 'Dosya İçerikleri',
+  'LBL_ACCOUNTS' => 'Müşteriler',
 );

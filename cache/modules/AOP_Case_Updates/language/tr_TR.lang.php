@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:52
+// created: 2025-04-22 17:49:10
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -34,7 +34,8 @@ $mod_strings = array (
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'İşlemler',
   'LBL_NEW_FORM_TITLE' => 'Yeni Destek Kaydı Güncellemeleri',
   'LBL_CASE_NAME' => 'Destek Kaydı',
-  'LBL_CONTACT_NAME' => 'İlgili',
+  'LBL_CONTACT_NAME' => 'Kontak',
   'LBL_INTERNAL' => 'İç Güncelleme',
   'LBL_AOP_CASE_ATTACHMENTS' => 'Ek Dosyalar: ',
+  'LBL_CONTACT' => 'Kontak',
 );

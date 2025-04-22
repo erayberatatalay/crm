@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:51
+// created: 2025-04-22 17:49:08
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -41,7 +41,7 @@ $mod_strings = array (
   'LBL_CREATE_PROJECT_TITLE' => 'Bu kalıbı kullanarak yeni bir proje eklemek ister misiniz?',
   'LBL_AM_TASKTEMPLATES_AM_PROJECTTEMPLATES_FROM_AM_TASKTEMPLATES_TITLE' => 'Görev Kalıpları',
   'LBL_AM_PROJECTTEMPLATES_USERS_1_TITLE' => 'Kullanıcılar',
-  'LBL_AM_PROJECTTEMPLATES_CONTACTS_1_TITLE' => 'İlgili Kişiler',
+  'LBL_AM_PROJECTTEMPLATES_CONTACTS_1_TITLE' => 'İlgili Kontaklar',
   'LBL_AM_PROJECTTEMPLATES_RESOURCES_TITLE' => 'Kaynakları Seçin',
   'LBL_NEW_PROJECT_CREATED' => 'Yeni Proje Eklendi',
   'LBL_NEW_PROJECT' => 'Proje Ekle',

@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:48
+// created: 2025-04-22 17:49:05
 $mod_strings = array (
   'LBL_ASSIGNED_TO_ID' => 'Atanmış Kullanıcı Kodu',
   'LBL_ASSIGNED_TO_NAME' => 'Atanmış Kişi',
@@ -33,10 +33,10 @@ $mod_strings = array (
   'LBL_CREATED_BY' => 'Ekleyen',
   'LNK_NEW_PROSPECT' => 'Hedef Ekle',
   'LNK_PROSPECT_LIST' => 'Hedefler',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kişiler',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kontaklar',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Potansiyeller',
   'LBL_PROSPECTS_SUBPANEL_TITLE' => 'Hedefler',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Hesaplar',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Müşteriler',
   'LBL_COPY_PREFIX' => 'Kopya',
   'LBL_USERS_SUBPANEL_TITLE' => 'Kullanıcılar',
   'LBL_TYPE' => 'Tür',
@@ -48,4 +48,6 @@ $mod_strings = array (
   'LBL_DOMAIN' => 'Etki alanına e-posta yok',
   'LBL_LIST_PROSPECTLIST_NAME' => 'Ad',
   'LBL_EMAIL_MARKETING' => 'E-posta Pazarlaması',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
+  'LBL_ACCOUNTS' => 'Müşteriler',
 );

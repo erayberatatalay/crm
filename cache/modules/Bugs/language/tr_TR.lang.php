@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:48
+// created: 2025-04-22 17:49:04
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi:',
@@ -71,11 +71,13 @@ $mod_strings = array (
   'LBL_DEFAULT_SUBPANEL_TITLE' => 'Hata İzleyici',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'İşlemler',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'Geçmiş',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kişiler',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Hesaplar',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kontaklar',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Müşteriler',
   'LBL_CASES_SUBPANEL_TITLE' => 'Destek Kayıtları',
   'LBL_PROJECTS_SUBPANEL_TITLE' => 'Projeler',
   'LBL_DOCUMENTS_SUBPANEL_TITLE' => 'Belgeler',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Atanmış Kullanıcı',
   'LBL_BUG_INFORMATION' => 'Özet',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
+  'LBL_ACCOUNTS' => 'Müşteriler',
 );

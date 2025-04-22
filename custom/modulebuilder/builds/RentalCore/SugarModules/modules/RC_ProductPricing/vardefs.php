@@ -1,3 +1,5 @@
+<br />
+<b>Deprecated</b>:  Using unregistered function "strstr" in a template is deprecated and will be removed in a future release. Use Smarty::registerPlugin to explicitly register a custom modifier. in <b>C:\xampp8.2\htdocs\suitecrm\vendor\smarty\smarty\libs\sysplugins\smarty_internal_compile_private_modifier.php</b> on line <b>113</b><br />
 <?php
 /**
  *

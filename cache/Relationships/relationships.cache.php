@@ -7892,6 +7892,191 @@
     'join_key_lhs' => 'surveyq72c7options_ida',
     'join_key_rhs' => 'surveyq10d4sponses_idb',
   ),
+  'rc_inventory_aos_products_1' => 
+  array (
+    'name' => 'rc_inventory_aos_products_1',
+    'true_relationship_type' => 'many-to-many',
+    'from_studio' => true,
+    'relationships' => 
+    array (
+      'rc_inventory_aos_products_1' => 
+      array (
+        'lhs_module' => 'RC_Inventory',
+        'lhs_table' => 'rc_inventory',
+        'lhs_key' => 'id',
+        'rhs_module' => 'AOS_Products',
+        'rhs_table' => 'aos_products',
+        'rhs_key' => 'id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'rc_inventory_aos_products_1_c',
+        'join_key_lhs' => 'rc_inventory_aos_products_1rc_inventory_ida',
+        'join_key_rhs' => 'rc_inventory_aos_products_1aos_products_idb',
+      ),
+    ),
+    'table' => 'rc_inventory_aos_products_1_c',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      1 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      2 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'rc_inventory_aos_products_1rc_inventory_ida',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      4 => 
+      array (
+        'name' => 'rc_inventory_aos_products_1aos_products_idb',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'rc_inventory_aos_products_1spk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'rc_inventory_aos_products_1_alt',
+        'type' => 'alternate_key',
+        'fields' => 
+        array (
+          0 => 'rc_inventory_aos_products_1rc_inventory_ida',
+          1 => 'rc_inventory_aos_products_1aos_products_idb',
+        ),
+      ),
+    ),
+    'lhs_module' => 'RC_Inventory',
+    'lhs_table' => 'rc_inventory',
+    'lhs_key' => 'id',
+    'rhs_module' => 'AOS_Products',
+    'rhs_table' => 'aos_products',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'rc_inventory_aos_products_1_c',
+    'join_key_lhs' => 'rc_inventory_aos_products_1rc_inventory_ida',
+    'join_key_rhs' => 'rc_inventory_aos_products_1aos_products_idb',
+  ),
+  'rc_orders_rc_inventory' => 
+  array (
+    'name' => 'rc_orders_rc_inventory',
+    'true_relationship_type' => 'one-to-many',
+    'relationships' => 
+    array (
+      'rc_orders_rc_inventory' => 
+      array (
+        'lhs_module' => 'RC_Orders',
+        'lhs_table' => 'rc_orders',
+        'lhs_key' => 'id',
+        'rhs_module' => 'RC_Inventory',
+        'rhs_table' => 'rc_inventory',
+        'rhs_key' => 'id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'rc_orders_rc_inventory_c',
+        'join_key_lhs' => 'rc_orders_rc_inventoryrc_orders_ida',
+        'join_key_rhs' => 'rc_orders_rc_inventoryrc_inventory_idb',
+      ),
+    ),
+    'table' => 'rc_orders_rc_inventory_c',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      1 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      2 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'rc_orders_rc_inventoryrc_orders_ida',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+      4 => 
+      array (
+        'name' => 'rc_orders_rc_inventoryrc_inventory_idb',
+        'type' => 'varchar',
+        'len' => 36,
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'rc_orders_rc_inventoryspk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'rc_orders_rc_inventory_ida1',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'rc_orders_rc_inventoryrc_orders_ida',
+        ),
+      ),
+      2 => 
+      array (
+        'name' => 'rc_orders_rc_inventory_alt',
+        'type' => 'alternate_key',
+        'fields' => 
+        array (
+          0 => 'rc_orders_rc_inventoryrc_inventory_idb',
+        ),
+      ),
+    ),
+    'lhs_module' => 'RC_Orders',
+    'lhs_table' => 'rc_orders',
+    'lhs_key' => 'id',
+    'rhs_module' => 'RC_Inventory',
+    'rhs_table' => 'rc_inventory',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'rc_orders_rc_inventory_c',
+    'join_key_lhs' => 'rc_orders_rc_inventoryrc_orders_ida',
+    'join_key_rhs' => 'rc_orders_rc_inventoryrc_inventory_idb',
+  ),
   'rc_productpricing_aos_products' => 
   array (
     'name' => 'rc_productpricing_aos_products',
@@ -14809,6 +14994,212 @@
     'join_key_rhs' => 'record_id',
     'relationship_role_column' => 'module',
     'relationship_role_column_value' => 'SurveyQuestionOptions',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'char',
+        'len' => '36',
+        'required' => true,
+        'default' => '',
+      ),
+      1 => 
+      array (
+        'name' => 'securitygroup_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      2 => 
+      array (
+        'name' => 'record_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      3 => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => '100',
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'modified_user_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      6 => 
+      array (
+        'name' => 'created_by',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      7 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'required' => true,
+        'default' => '0',
+      ),
+    ),
+  ),
+  'rc_inventory_modified_user' => 
+  array (
+    'name' => 'rc_inventory_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'RC_Inventory',
+    'rhs_table' => 'rc_inventory',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'rc_inventory_created_by' => 
+  array (
+    'name' => 'rc_inventory_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'RC_Inventory',
+    'rhs_table' => 'rc_inventory',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'rc_inventory_assigned_user' => 
+  array (
+    'name' => 'rc_inventory_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'RC_Inventory',
+    'rhs_table' => 'rc_inventory',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'securitygroups_rc_inventory' => 
+  array (
+    'name' => 'securitygroups_rc_inventory',
+    'lhs_module' => 'SecurityGroups',
+    'lhs_table' => 'securitygroups',
+    'lhs_key' => 'id',
+    'rhs_module' => 'RC_Inventory',
+    'rhs_table' => 'rc_inventory',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'securitygroups_records',
+    'join_key_lhs' => 'securitygroup_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'RC_Inventory',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'char',
+        'len' => '36',
+        'required' => true,
+        'default' => '',
+      ),
+      1 => 
+      array (
+        'name' => 'securitygroup_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      2 => 
+      array (
+        'name' => 'record_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      3 => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => '100',
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'modified_user_id',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      6 => 
+      array (
+        'name' => 'created_by',
+        'type' => 'char',
+        'len' => '36',
+      ),
+      7 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'required' => true,
+        'default' => '0',
+      ),
+    ),
+  ),
+  'rc_orders_modified_user' => 
+  array (
+    'name' => 'rc_orders_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'RC_Orders',
+    'rhs_table' => 'rc_orders',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'rc_orders_created_by' => 
+  array (
+    'name' => 'rc_orders_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'RC_Orders',
+    'rhs_table' => 'rc_orders',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'rc_orders_assigned_user' => 
+  array (
+    'name' => 'rc_orders_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'RC_Orders',
+    'rhs_table' => 'rc_orders',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'securitygroups_rc_orders' => 
+  array (
+    'name' => 'securitygroups_rc_orders',
+    'lhs_module' => 'SecurityGroups',
+    'lhs_table' => 'securitygroups',
+    'lhs_key' => 'id',
+    'rhs_module' => 'RC_Orders',
+    'rhs_table' => 'rc_orders',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'securitygroups_records',
+    'join_key_lhs' => 'securitygroup_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'RC_Orders',
     'fields' => 
     array (
       0 => 

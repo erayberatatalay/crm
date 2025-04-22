@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:48
+// created: 2025-04-22 17:49:05
 $mod_strings = array (
   'LBL_SECURITYGROUPS' => 'Güvenlik Grupları',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Güvenlik Grupları',
@@ -41,8 +41,8 @@ $mod_strings = array (
   'LBL_DEFAULT_SUBPANEL_TITLE' => 'Projeler',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'İşlemler',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'Geçmiş',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kişiler',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Hesaplar',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kontaklar',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Müşteriler',
   'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Fırsatlar',
   'LBL_CASES_SUBPANEL_TITLE' => 'Destek Kayıtları',
   'LBL_BUGS_SUBPANEL_TITLE' => 'Hatalar',
@@ -123,7 +123,9 @@ $mod_strings = array (
   'LBL_CHART_QUARTERLY' => 'Üç Aylık',
   'LBL_RESOURCE_CHART_MONTH' => 'Ay',
   'LBL_RESOURCE_CHART_QUARTER' => 'Çeyrek',
-  'LBL_PROJECT_CONTACTS_1_FROM_CONTACTS_TITLE' => 'İlgili Kişiler Başlığından Proje İlgili Kişileri',
+  'LBL_PROJECT_CONTACTS_1_FROM_CONTACTS_TITLE' => 'İlgili Kontaklar Başlığından Proje İlgili Kontaklari',
   'LBL_AM_PROJECTTEMPLATES_PROJECT_1_FROM_PROJECT_TITLE' => 'Proje Kalıpları: Proje Başlığından Proje',
   'LBL_AOS_QUOTES_PROJECT' => 'Teklifler: Proje',
+  'LBL_ACCOUNTS' => 'Müşteriler',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
 );

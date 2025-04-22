@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:50
+// created: 2025-04-22 17:49:07
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -49,11 +49,11 @@ $mod_strings = array (
   'LBL_START_TIME' => 'Başlangıç Saati:',
   'DATE_FORMAT' => '(yyyy-aa-gg)',
   'LBL_NONE' => 'Yok',
-  'LBL_CONTACT' => 'İlgili Kişi:',
+  'LBL_CONTACT' => 'Kontak Kişi:',
   'LBL_EMAIL_ADDRESS' => 'E-posta Adresi:',
   'LBL_PHONE' => 'Telefon:',
   'LBL_EMAIL' => 'E-posta Adresi:',
-  'LBL_CONTACT_NAME' => 'İlgili Kişi Adı',
+  'LBL_CONTACT_NAME' => 'Kontak Kişi Adı',
   'LBL_LIST_STATUS' => 'Durum',
   'LBL_DATE_DUE_FLAG' => 'Tamamlanma Tarihi Yok',
   'LBL_DATE_START_FLAG' => 'Başlangıç Tarihi Yok',
@@ -63,13 +63,14 @@ $mod_strings = array (
   'LNK_IMPORT_TASKS' => 'Görevleri İçe Aktar',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Atanmış Kullanıcı',
   'LBL_LIST_DATE_MODIFIED' => 'Değiştirilme Tarihi',
-  'LBL_CONTACT_ID' => 'İlgili Kişi Kodu:',
+  'LBL_CONTACT_ID' => 'Kontak Kişi Kodu:',
   'LBL_PARENT_ID' => 'Üst Öge Kodu:',
-  'LBL_CONTACT_PHONE' => 'İlgili Kişi Telefonu:',
+  'LBL_CONTACT_PHONE' => 'Kontak Kişi Telefonu:',
   'LBL_PARENT_TYPE' => 'Üst Öge Türü:',
   'LBL_TASK_INFORMATION' => 'Görev Özeti',
   'LBL_EDITLAYOUT' => 'Görünümü Düzenle',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'Notlar',
   'LBL_DATE_DUE' => 'Tamamlanma Tarihi',
   'LBL_RELATED_TO' => 'İlişkili:',
+  'LBL_ACCOUNT' => 'Müşteri',
 );

@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:18:08
+// created: 2025-04-22 17:49:11
 $mod_strings = array (
   'LBL_CAPTCHA_HELP_TEXT' => 'Güvenlik kodu, yanıtın bir bilgisayar tarafından verilip verilmediğini sınamak için kullanılır. http://recaptcha.net/ adresinde oturum açarak özel ve genel reCAPTCHA anahtarlarınızı alın.',
   'CAPTCHA' => 'Güvenlik Kodu Doğrulaması',

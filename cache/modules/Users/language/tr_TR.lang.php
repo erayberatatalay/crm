@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:18:00
+// created: 2025-04-22 17:49:11
 $mod_strings = array (
   'ERR_NO_2FACTOR_EMAIL_TMPL' => 'İki aşamalı kimlik doğrulama e-posta kalıbı ayarlanmamış. Lütfen parola yönetimi bölümünden ayarları yapın.',
   'ERR_NO_2FACTOR_EMAIL_TMPL_CODE' => 'İki aşamalı kimlik doğrulama e-posta kalıbında en az bir $code bulunmalıdır.',

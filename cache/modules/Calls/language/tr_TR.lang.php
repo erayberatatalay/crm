@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:49
+// created: 2025-04-22 17:49:06
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -33,14 +33,14 @@ $mod_strings = array (
   'LBL_NEW_FORM_TITLE' => 'Görüşme Ekle',
   'LBL_LIST_CLOSE' => 'Kapat',
   'LBL_LIST_SUBJECT' => 'Konu',
-  'LBL_LIST_CONTACT' => 'İlgili',
+  'LBL_LIST_CONTACT' => 'Kontak',
   'LBL_LIST_RELATED_TO' => 'İlişkili ',
   'LBL_LIST_RELATED_TO_ID' => 'İlişkili Kod',
   'LBL_LIST_DATE' => 'Başlangıç Tarihi',
   'LBL_LIST_DIRECTION' => 'Yön',
   'LBL_SUBJECT' => 'Konu:',
   'LBL_REMINDER' => 'Anımsatıcı:',
-  'LBL_CONTACT_NAME' => 'İlgili:',
+  'LBL_CONTACT_NAME' => 'Kontak:',
   'LBL_STATUS' => 'Durum:',
   'LBL_DIRECTION' => 'Yön:',
   'LBL_DATE' => 'Başlangıç Tarihi:',
@@ -82,7 +82,7 @@ $mod_strings = array (
   'LNK_NEW_ACCOUNT' => 'Hesap Ekle',
   'LNK_NEW_OPPORTUNITY' => 'Yeni Fırsat',
   'LBL_LEADS_SUBPANEL_TITLE' => 'Potansiyeller',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kişiler',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kontaklar',
   'LBL_USERS_SUBPANEL_TITLE' => 'Kullanıcılar',
   'LBL_OUTLOOK_ID' => 'Outlook Kodu',
   'LBL_MEMBER_OF' => 'Şunun üyesi',
@@ -131,4 +131,6 @@ $mod_strings = array (
   'LBL_LIST_DATE_MODIFIED' => 'Değiştirilme Tarihi',
   'LBL_LIST_DUE_DATE' => 'Tamamlanma Tarihi',
   'LBL_RESCHEDULED_BY' => 'tarafından',
+  'LBL_ACCOUNT' => 'Müşteri',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
 );

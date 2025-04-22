@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:49
+// created: 2025-04-22 17:49:06
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -42,7 +42,7 @@ $mod_strings = array (
   'LBL_ERROR_SELECT_MODULE' => 'Lütfen İlişkilendirilecek alanından bir modül seçin',
   'ERR_ARCHIVE_EMAIL' => 'Hata: Arşivlenecek bir e-posta seçmemişsiniz.',
   'ERR_DELETE_RECORD' => 'Hata: Hesabı silmek için bir kayıt numarası belirtmelisiniz.',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Hesaplar',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Müşteriler',
   'LBL_ADD_DASHLETS' => 'SuiteCRM Pano Bileşenleri Ekle',
   'LBL_ADD_DOCUMENT' => 'Belge Ekle',
   'LBL_ADD_ENTRIES' => 'Kayıt Ekle',
@@ -57,7 +57,7 @@ $mod_strings = array (
   'LBL_CC' => 'Kopya:',
   'LBL_COMPOSE_MODULE_NAME' => 'Yeni E-posta',
   'LBL_CONTACT_NAME' => 'İlgili Kişi:',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kişiler',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kontaklar',
   'LBL_CREATED_BY' => 'Ekleyen',
   'LBL_DATE_SENT_RECEIVED' => 'Gönderildiği/Alındığı Tarih:',
   'LBL_DATE' => 'Gönderilme Tarihi:',
@@ -69,10 +69,10 @@ $mod_strings = array (
   'LBL_EMAIL_SELECTOR_SELECT' => 'Seçin',
   'LBL_EMAIL_SELECTOR_CLEAR' => 'Temizle',
   'LBL_EMAIL' => 'E-posta Adresi:',
-  'LBL_EMAILS_ACCOUNTS_REL' => 'E-postalar:Hesaplar',
+  'LBL_EMAILS_ACCOUNTS_REL' => 'E-postalar:Müşteriler',
   'LBL_EMAILS_BUGS_REL' => 'E-postalar:Hatalar',
   'LBL_EMAILS_CASES_REL' => 'E-postalar:DestekKayıtları',
-  'LBL_EMAILS_CONTACTS_REL' => 'E-postalar:İlgiliKişiler',
+  'LBL_EMAILS_CONTACTS_REL' => 'E-postalar:İlgiliKontaklar',
   'LBL_EMAILS_LEADS_REL' => 'E-postalar:Potansiyeller',
   'LBL_EMAILS_OPPORTUNITIES_REL' => 'E-postalar:Fırsatlar',
   'LBL_EMAILS_NOTES_REL' => 'E-postalar:Notlar',

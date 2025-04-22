@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:19:42
+// created: 2025-04-22 17:49:08
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -56,5 +56,11 @@ $mod_strings = array (
   'LBL_PRODUCTS_PURCHASES' => 'Satın Almalar',
   'LBL_AOS_QUOTE_NAME' => 'Teklif',
   'LBL_ACCOUNT_NAME' => 'Hesap',
-  'LBL_RC_PRODUCTPRICING_AOS_PRODUCTS_FROM_RC_PRODUCTPRICING_TITLE' => 'Product Pricing',
+  'LBL_RC_INVENTORY_AOS_PRODUCTS_1_FROM_RC_INVENTORY_TITLE' => 'Envanter',
+  'LBL_RC_PRODUCTPRICING_AOS_PRODUCTS_FROM_RC_PRODUCTPRICING_TITLE' => 'Fiyat Kategorisi',
+  'LBL_BRAND' => 'Marka',
+  'LBL_STATUS' => 'Durum',
+  'LBL_EDITVIEW_PANEL1' => 'undefined 1',
+  'LBL_MODEL' => 'Model',
+  'LBL_TECH_SPECS' => 'Teknik Özellikler',
 );

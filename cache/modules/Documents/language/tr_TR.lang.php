@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:50
+// created: 2025-04-22 17:49:07
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -115,8 +115,8 @@ $mod_strings = array (
   'LBL_LIST_EXT_DOCUMENT_NAME' => 'Dosya Adı',
   'ERR_INVALID_EXTERNAL_API_ACCESS' => 'Kullanıcı geçersiz bir dış API uygulamasına ({0}) erişmeye çalıştı',
   'ERR_INVALID_EXTERNAL_API_LOGIN' => 'Dış API uygulamasında ({0}) oturum açılamadı',
-  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Hesaplar',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Kişiler',
+  'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Müşteriler',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'Kontaklar',
   'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Fırsatlar',
   'LBL_CASES_SUBPANEL_TITLE' => 'Destek Kayıtları',
   'LBL_BUGS_SUBPANEL_TITLE' => 'Hatalar',

@@ -1,6 +1,8 @@
 <?php
-// created: 2025-04-21 16:18:05
+// created: 2025-04-22 17:49:08
 $mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
   'LBL_DATE_MODIFIED' => 'Date Modified',
@@ -12,19 +14,6 @@ $mod_strings = array (
   'LBL_NAME' => 'Product Name',
   'LBL_CREATED_USER' => 'Created by User',
   'LBL_MODIFIED_USER' => 'Modified by User',
-  'LBL_LIST_NAME' => 'Name',
-  'LBL_EDIT_BUTTON' => 'Edit',
-  'LBL_REMOVE' => 'Remove',
-  'LBL_ASCENDING' => 'Ascending',
-  'LBL_DESCENDING' => 'Descending',
-  'LBL_OPT_IN' => 'Opt In',
-  'LBL_OPT_IN_PENDING_EMAIL_NOT_SENT' => 'Pending Confirm opt in, Confirm opt in not sent',
-  'LBL_OPT_IN_PENDING_EMAIL_SENT' => 'Pending Confirm opt in, Confirm opt in sent',
-  'LBL_OPT_IN_CONFIRMED' => 'Opted in',
-  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
-  'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
-  'LBL_SECURITYGROUPS' => 'Security Groups',
-  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'LBL_LIST_FORM_TITLE' => 'Products List',
   'LBL_MODULE_NAME' => 'Products',
   'LBL_MODULE_TITLE' => 'Products: Home',
@@ -56,5 +45,6 @@ $mod_strings = array (
   'LBL_PRODUCTS_PURCHASES' => 'Purchases',
   'LBL_AOS_QUOTE_NAME' => 'Quote',
   'LBL_ACCOUNT_NAME' => 'Account',
+  'LBL_RC_INVENTORY_AOS_PRODUCTS_1_FROM_RC_INVENTORY_TITLE' => 'Inventory',
   'LBL_RC_PRODUCTPRICING_AOS_PRODUCTS_FROM_RC_PRODUCTPRICING_TITLE' => 'Product Pricing',
 );

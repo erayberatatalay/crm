@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:53
+// created: 2025-04-22 17:49:08
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -25,7 +25,7 @@ $mod_strings = array (
   'LBL_ASSIGNED_TO_NAME' => 'Sözleşme Yönetimi',
   'LBL_SECURITYGROUPS' => 'Güvenlik Grupları',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Güvenlik Grupları',
-  'LBL_CONTRACT_ACCOUNT' => 'Hesap',
+  'LBL_CONTRACT_ACCOUNT' => 'Müşteri',
   'LBL_OPPORTUNITY' => 'Fırsat',
   'LBL_LIST_FORM_TITLE' => 'Sözleşme Listesi',
   'LBL_MODULE_NAME' => 'Sözleşmeler',
@@ -47,7 +47,7 @@ $mod_strings = array (
   'LBL_COMPANY_SIGNED_DATE' => 'Kuruluş İmza Tarihi',
   'LBL_RENEWAL_REMINDER_DATE' => 'Yenileme Anımsatma Tarihi',
   'LBL_CONTRACT_TYPE' => 'Sözleşme Türü',
-  'LBL_CONTACT' => 'İlgili',
+  'LBL_CONTACT' => 'Kontak',
   'LBL_ADD_GROUP' => 'Grup Ekle',
   'LBL_DELETE_GROUP' => 'Grubu Sil',
   'LBL_GROUP_NAME' => 'Grup Adı',
@@ -95,4 +95,6 @@ $mod_strings = array (
   'LBL_AOS_LINE_ITEM_GROUPS' => 'Satır Ögesi Grupları',
   'LBL_AOS_PRODUCT_QUOTES' => 'Ürün Teklifleri',
   'LBL_AOS_QUOTES_AOS_CONTRACTS' => 'Teklifler: Sözleşmeler',
+  'LBL_ACCOUNTS' => 'Müşteriler',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
 );

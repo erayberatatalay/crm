@@ -1,5 +1,5 @@
 <?php
-// created: 2025-04-21 16:17:49
+// created: 2025-04-22 17:49:06
 $mod_strings = array (
   'LBL_ID' => 'Kod',
   'LBL_DATE_ENTERED' => 'Eklenme Tarihi',
@@ -28,8 +28,8 @@ $mod_strings = array (
   'LBL_ACCEPT_THIS' => 'Kabul ediyor musunuz?',
   'LBL_ADD_BUTTON' => 'Ekle',
   'LBL_ADD_INVITEE' => 'Çağrılan Ekle',
-  'LBL_CONTACT_NAME' => 'İlgili Kişi:',
-  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kişiler',
+  'LBL_CONTACT_NAME' => 'Kontak Kişi:',
+  'LBL_CONTACTS_SUBPANEL_TITLE' => 'İlgili Kontaklar',
   'LBL_CREATED_BY' => 'Ekleyen',
   'LBL_DATE_END' => 'Bitiş Tarihi',
   'LBL_DATE_TIME' => 'Başlangıç Tarihi ve Saati:',
@@ -48,7 +48,7 @@ $mod_strings = array (
   'LBL_LAST_NAME' => 'Soyad',
   'LBL_LIST_ASSIGNED_TO_NAME' => 'Atanmış Kullanıcı',
   'LBL_LIST_CLOSE' => 'Kapat',
-  'LBL_LIST_CONTACT' => 'İlgili kişi',
+  'LBL_LIST_CONTACT' => 'Kontak kişi',
   'LBL_LIST_DATE_MODIFIED' => 'Değiştirilme Tarihi',
   'LBL_LIST_DATE' => 'Başlangıç Tarihi',
   'LBL_LIST_DIRECTION' => 'Yön',
@@ -131,4 +131,6 @@ $mod_strings = array (
   'LBL_REMINDERS_ADD_REMINDER' => 'Anımsatıcı ekle',
   'LBL_GSYNC_ID' => 'Google Etkinlik Kodu',
   'LBL_GSYNC_LASTSYNC' => 'Son Google Eşitlemesinin Zaman Damgası',
+  'LBL_CONTACTS' => 'İlgili Kontaklar',
+  'LBL_ACCOUNT' => 'Müşteri',
 );
